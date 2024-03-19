@@ -57,7 +57,7 @@
         {% if site.scholar.last_name contains author_last_name %}
           {% if site.scholar.first_name contains author.first %}
             {% assign author_is_self = true %}
-          {% elsif author.first == null %}
+          {% elsif author.first == "" %}
             {% assign author_is_self = true %}
           {% endif %}
         {%- endif -%}
@@ -68,7 +68,7 @@
             {% if coauthor.firstname contains author.first %}
               {%- assign coauthor_url = coauthor.url -%}
               {% break %}
-            {% elsif elsif author.first == null %}
+            {% elsif author.first == "" %}
               {%- assign coauthor_url = coauthor.url -%}
               {% break %}
             {% endif %}
@@ -81,24 +81,18 @@
         {%- if author_is_self -%}
           <!-- <em> -->
           <strong>
-            first
             {{- author.first }}
-            last
             {{ author.last -}}
           </strong>
           <!-- </em> -->
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{coauthor_url}}">
-              first
               {{- author.first }}
-              last
               {{ author.last -}}
             </a>
           {%- else -%}
-            first
             {{ author.first }}
-            last
             {{ author.last }}
           {% endif %}
         {%- endif -%}
