@@ -10,37 +10,35 @@
   "work": [
     {
       "name": "NExT++ Centre, National University of Singapore",
-      "position": "Visiting Scholear",
-      "url": "https://www.nextcenter.org/",
+      "position": "Visiting Scholar",
       "startDate": "2023-12-18",
-      "endDate": "now"
+      "endDate": "now",
+      "summary": "Supervisor: Prof. Tat-seng Chua"
     },
     {
       "name": "Institute of Computing Technology, Chinese Academy of Sciences",
       "position": "Assistant Researcher",
-      "url": "https://www.ict.ac.cn/",
       "startDate": "2023-07-10",
-      "endDate": "now"
+      "endDate": "now",
+      "summary": "Supervisor: Prof. Jiafeng Guo"
     }
   ],
   "education": [
     {
       "institution": "University of Chinese Academy of Sciences",
       "location": "Beijing, China",
-      "area": "Computer Science",
-      "studyType": "Ph.D",
+      "studyType": "Ph.D in Computer Science",
       "startDate": "2018-09-01",
       "endDate": "2023-06-25",
-      "summary": "Supervisor: Prof. Xueqi Cheng"
+      "area": "Supervisor: Prof. Xueqi Cheng"
     },
     {
       "institution": "Zhejiang University",
       "location": "Hangzhou, China",
-      "area": "Computer Science",
-      "studyType": "B.S",
+      "studyType": "B.S in Computer Science",
       "startDate": "2012-09-01",
       "endDate": "2016-06-30",
-      "summary": "Supervisor: Prof. Yueting Zhuang and Assoc. Prof. Donghui Wang"
+      "area": "Supervisor: Prof. Yueting Zhuang and Assoc. Prof. Donghui Wang"
     }
   ],
   "interests": [
