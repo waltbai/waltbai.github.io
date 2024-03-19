@@ -79,18 +79,26 @@
           {% if forloop.first == false %},&nbsp;{% endif %}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <!-- <em> -->
+          <strong>
+            first
             {{- author.first }}
+            last
             {{ author.last -}}
-          </em>
+          </strong>
+          <!-- </em> -->
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{coauthor_url}}">
+              first
               {{- author.first }}
+              last
               {{ author.last -}}
             </a>
           {%- else -%}
+            first
             {{ author.first }}
+            last
             {{ author.last }}
           {% endif %}
         {%- endif -%}
