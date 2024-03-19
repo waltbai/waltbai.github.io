@@ -22,4 +22,4 @@ He started to be a visiting scholar in NExT++ Centre, National University of Sin
 Before that, he obtained Ph.D degree from University of Chinese Academy of Sciences (UCAS) in 2023, supervised by [Prof. Xueqi Cheng](http://bigdatalab.ac.cn/cxq/), and obtained bachelor's degree from [Zhejiang University](https://www.zju.edu.cn/) in 2016.
 
 Long Bai's research interests lie in Knowledge Graph (KG) and Natural Language Processing (NLP). 
-He is currently focusing on event-centric techniques, including event extraction, event relation extraction, and event prediction.
+He is currently focusing on event-centric techniques, including event extraction, event relation extraction, event prediction, etc.
