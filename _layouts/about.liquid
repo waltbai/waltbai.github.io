@@ -35,36 +35,46 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        {% if page.social %}
+          <div class="social">
+            <div class="contact-icons">{% include social.liquid %}</div>
+
+            <div class="contact-note">{{ site.data[site.active_lang].strings.contact_note }}</div>
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
+    <!-- News 
     {% if page.news and site.announcements.enabled %}
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.news }}</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
+    -->
 
-    <!-- Latest posts -->
+    <!-- Latest posts 
     {% if site.latest_posts.enabled %}
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.latest_posts }}</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
+    -->
 
-    <!-- Selected papers -->
+    <!-- Selected papers 
     {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.selected_publications }}</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+    -->
 
-    <!-- Social -->
+    <!-- Social 
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
@@ -72,5 +82,6 @@ layout: default
         <div class="contact-note">{{ site.data[site.active_lang].strings.contact_note }}</div>
       </div>
     {% endif %}
+    -->
   </article>
 </div>

@@ -280,7 +280,7 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 
 scholar:
   last_name: [Bai]
-  first_name: [Long]
+  first_name: [Long, 白龙]
 
   style: apa
   locale: en
