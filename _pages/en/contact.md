@@ -4,10 +4,12 @@ layout: page
 permalink: /contact/
 title: contact
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
-**Email**: bailong@ict.ac.cn (Preferred), bailong7799@gmail.com
+**Email**:  
+bailong@ict.ac.cn (Preferred)  
+bailong7799@gmail.com
 
 **Address**:  
 NExT++ Centre 
