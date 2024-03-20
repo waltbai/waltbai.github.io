@@ -1,27 +1,25 @@
 ---
 page_id: about
 layout: about
-title: sobre
+title: about
 permalink: /
-subtitle: <a href='#'>Afiliações</a>. Endereço. Contatos. Lema. Etc.
+subtitle: 
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 seu telefone do trabalho</p>
-    <p>123 seu endereço</p>
-    <p>Sua cidade, estado 12345</p>
+  more_info: 
 
-news: true # includes a list of news items
-latest_posts: true # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+latest_posts: false # includes a list of latest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Escreva sua biografia aqui. Diga ao mundo sobre você. Adicione o link para o seu [subreddit](http://reddit.com) favorito. Você pode colocar uma foto também. O código já está dentro, basta nomear sua foto como `prof_pic.jpg` e colocá-la na pasta `img/`.
+Long Bai is an assistant researcher at [Key Laboratory of Network Data Science and Technology](http://bigdatalab.ac.cn/),  [Institute of Computing Technology](http://www.ict.ac.cn/), Chinese Academy of Sciences (ICTCAS), supervised by [Prof. Jiafeng Guo](http://www.bigdatalab.ac.cn/gjf/). 
+He started to be a visiting scholar in NExT++ Centre, National University of Singapore in Dec. 2023, supervised by [Prof. Tat-seng Chua](https://www.chuatatseng.com/).
+Before that, he obtained Ph.D degree from University of Chinese Academy of Sciences (UCAS) in 2023, supervised by [Prof. Xueqi Cheng](http://bigdatalab.ac.cn/cxq/), and obtained bachelor's degree from [Zhejiang University](https://www.zju.edu.cn/) in 2016.
 
-Coloque seu endereço / caixa postal / outras informações logo abaixo da sua foto. Você também pode desabilitar qualquer um desses elementos editando a propriedade `profile` do cabeçalho YAML do seu `_pages/about.md`. Edite `_bibliography/papers.bib` e o Jekyll renderizará sua [página de publicações](/multi-language-al-folio/publications/) automaticamente.
-
-Adicione links para seus perfis de mídias sociais também. Este tema está configurado para usar [Font Awesome icons](https://fontawesome.com/) e [Academicons](https://jpswalsh.github.io/academicons/), como os visto abaixo. Adicione seu Facebook, Twitter, LinkedIn, Google Scholar ou simplesmente desative todos eles.
+Long Bai's research interests lie in Knowledge Graph (KG) and Natural Language Processing (NLP). 
+He is currently focusing on event-centric techniques, including event extraction, event relation extraction, event prediction, etc.
