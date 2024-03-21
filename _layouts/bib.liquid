@@ -88,9 +88,9 @@
               {{ author.last -}}
             </a>
           {%- else -%}
-            {{ author.first }}
-            {{ author.last }}
-          {% endif %}
+            {{- author.first }}
+            {{ author.last -}}
+          {%- endif -%}
         {%- endif -%}
       {% endfor %}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
