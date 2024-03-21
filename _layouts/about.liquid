@@ -4,12 +4,12 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
-      {% if site.title[site.language] == 'blank' %}
+      {% if site.title[site.active_lang] == 'blank' %}
         <!-- <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} -->
-        {{ site.name[site.language].first_name }}
-        {{ site.name[site.language].last_name }}
+        {{ site.name[site.active_lang].first_name }}
+        {{ site.name[site.active_lang].last_name }}
       {% else %}
-        {{ site.title }}
+        {{ site.title[site.active_lang] }}
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
