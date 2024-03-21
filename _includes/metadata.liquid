@@ -14,16 +14,16 @@
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 {% endif %}
 
-{% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% capture author_name %}{{ site.[site.active_lang].first_name }}{% if site.[site.active_lang].middle_name %} {{ site.[site.active_lang].middle_name }}{% endif %} {{ site.[site.active_lang].last_name }}{% endcapture %}
 
 <!-- Standard metadata -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-{% if site.title == 'blank' %}
+{% if site.[site.active_lang].title == 'blank' %}
   {% capture title %}{{ author_name }}{% endcapture %}
 {% else %}
-  {% capture title %}{{ site.title }}{% endcapture %}
+  {% capture title %}{{ site.[site.active_lang].title }}{% endcapture %}
 {% endif %}
 {% if page.title != null and page.title != '' %}
   {% if page.url == '/blog/index.html' %}

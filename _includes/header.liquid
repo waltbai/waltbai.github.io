@@ -4,20 +4,20 @@
     <div class="container">
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title[site.language] == 'blank' %}
-            {% if site.name[site.language].first_name %}
+          {% if site.title[site.active_lang] == 'blank' %}
+            {% if site.name[site.active_lang].first_name %}
               {%- comment -%} <span class="font-weight-bold"> {%- endcomment -%}
-                {{- site.name[site.language].first_name -}}
+                {{- site.name[site.active_lang].first_name -}}
               {%- comment -%} </span> {%- endcomment -%}
             {% endif %}
-            {% if site.name[site.language].middle_name %}
-              {{- site.name[site.language].middle_name -}}
+            {% if site.name[site.active_lang].middle_name %}
+              {{- site.name[site.active_lang].middle_name -}}
             {% endif %}
-            {% if site.name[site.language].last_name %}
-              {{- site.name[site.language].last_name -}}
+            {% if site.name[site.active_lang].last_name %}
+              {{- site.name[site.active_lang].last_name -}}
             {% endif %}
           {% else %}
-            {{- site.title[site.language].title -}}
+            {{- site.title[site.active_lang] -}}
           {% endif %}
         </a>
       {% elsif site.enable_navbar_social %}
