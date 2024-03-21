@@ -1,10 +1,11 @@
 {
   "basics": {
     "name": "白龙",
+    "label": "特别研究助理",
     "image": "",
     "email": "bailong@ict.ac.cn",
     "url": "https://waltbai.github.io",
-    "summary": "中国科学院计算技术研究所网络数据科学与技术重点实验室 特别研究助理"
+    "summary": "中国科学院计算技术研究所 特别研究助理"
   },
   "work": [
     {

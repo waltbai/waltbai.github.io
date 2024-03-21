@@ -2,10 +2,22 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: Long
-middle_name: 
-last_name: Bai
+# title: blank # the website title (if blank, full name will be used instead)
+title:
+  en: blank
+  zh: 个人简介
+# first_name: Long
+# middle_name: 
+# last_name: Bai
+name:
+  en:
+    first_name: Long
+    middle_name:
+    last_name: Bai
+  zh:
+    first_name:
+    middle_name:
+    last_name: 白龙
 email: bailong@ict.ac.cn
 keywords:  # add your own keywords or leave empty
 icon:  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
