@@ -2,16 +2,16 @@
 page_id: contact
 layout: page
 permalink: /contact/
-title: Contact
+title: 联系方式
 nav: true
 nav_order: 5
 ---
 
-**Email**:  
-bailong@ict.ac.cn (Preferred)  
+**邮箱**:  
+bailong@ict.ac.cn (主要)  
 bailong7799@gmail.com
 
-**Address**:  
+**地址**:  
 NExT++ Centre  
 COM4-04-01, 3A Research Link  
 National University of Singapore  

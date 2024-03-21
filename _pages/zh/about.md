@@ -1,7 +1,7 @@
 ---
 page_id: about
 layout: about
-title: about
+title: 个人简介
 permalink: /
 subtitle: 
 
@@ -17,9 +17,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Long Bai is an assistant researcher at [Key Laboratory of Network Data Science and Technology](http://bigdatalab.ac.cn/),  [Institute of Computing Technology](http://www.ict.ac.cn/), Chinese Academy of Sciences (ICTCAS), supervised by [Prof. Jiafeng Guo](http://www.bigdatalab.ac.cn/gjf/). 
-He started to be a visiting scholar in NExT++ Centre, National University of Singapore in Dec. 2023, supervised by [Prof. Tat-seng Chua](https://www.chuatatseng.com/).
-Before that, he obtained Ph.D degree from University of Chinese Academy of Sciences (UCAS) in 2023, supervised by [Prof. Xueqi Cheng](http://bigdatalab.ac.cn/cxq/), and obtained bachelor's degree from [Zhejiang University](https://www.zju.edu.cn/) in 2016.
+白龙，[中国科学院计算技术研究所](http://www.ict.ac.cn/)[网络数据科学与技术重点实验室](http://bigdatalab.ac.cn/)特别研究助理，导师为[郭嘉丰](https://bigdatalab.ac.cn/rcpy/bssds/202203/t20220308_20651.html)研究员。
+于2023年12月起于新加坡国立大学NExT++研究中心访问，导师为[蔡达成](https://www.chuatatseng.com/)教授。
+2023年博士毕业于中国科学院大学，导师为[程学旗](https://bigdatalab.ac.cn/yjdw/jcrc/202203/t20220308_20663.html)研究员。
+2016年本科毕业于浙江大学。
 
-Long Bai's research interests lie in Knowledge Graph (KG) and Natural Language Processing (NLP). 
-He is currently focusing on event-centric techniques, including event extraction, event relation extraction, event prediction, etc.
+主要研究方向为知识图谱与自然语言处理技术，当前主要关注以事件为中心的信息获取与分析预测技术，包括事件抽取、事件关系抽取、事件预测等。
