@@ -1,104 +1,104 @@
 blog:
   navigation_title: blog
 categories:
-  fun: diversão
-  work: trabalho
-contact_note: Você pode até adicionar uma pequena observação sobre qual dessas é a melhor maneira de entrar em contato com você.
+  fun: fun
+  work: work
+# contact_note: You can even add a little note about which of these is the best way to reach you.
 footer_text: > # the ">" symbol means to ignore newlines until "titles:"
-  Desenvolvido em <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> com o tema <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>.
-  Hospedado por <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Fotos do <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-latest_posts: últimas postagens
-news: novidades
-selected_publications: publicações selecionadas
-site_description: Um tema simples para acadêmicos. Baseado no design do [*folio](https://github.com/bogoli/-folio).
-archive_category: um arquivo de postagens desta categoria
-archive_tag: um arquivo de postagens com este marcador
-archive_year: um arquivo de postagens deste ano
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+latest_posts: latest posts
+news: news
+selected_publications: selected publications
+site_description: A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+archive_category: an archive of posts in this category
+archive_tag: an archive of posts with this tag
+archive_year: an archive of posts from this year
 related_posts:
-  description: "Aqui estão alguns artigos relacionados que você pode gostar de ler:"
-  title: Gostou de Ler este Artigo?
-references: Referências
+  description: "Here are some more articles you might like to read next:"
+  title: Enjoy Reading This Article?
+references: References
 months:
   long:
-    january: Janeiro
-    february: Fevereiro
-    march: Março
-    april: Abril
-    may: Maio
-    june: Junho
-    july: Julho
-    august: Agosto
-    september: Setembro
-    october: Outubro
-    november: Novembro
-    december: Dezembro
+    january: January
+    february: February
+    march: March
+    april: April
+    may: May
+    june: June
+    july: July
+    august: August
+    september: September
+    october: October
+    november: November
+    december: December
   short:
     january: Jan
-    february: Fev
+    february: Feb
     march: Mar
-    april: Abr
-    may: Mai
+    april: Apr
+    may: May
     june: Jun
     july: Jul
-    august: Ago
-    september: Set
-    october: Out
+    august: Aug
+    september: Sep
+    october: Oct
     november: Nov
-    december: Dez
-no_news: Nenhuma novidade no momento...
+    december: Dec
+no_news: No news so far...
 pagination:
-  newer: Recentes
-  older: Antigas
-  page: página
+  newer: Newer
+  older: Older
+  page: page
 cv:
-  address: Endereço
-  area: Área
-  awarder: Premiado por
-  awards: Prêmios
-  basics: Informações gerais
-  certificates: Certificados
-  city: Cidade
-  countryCode: Código do país
-  courses: Cursos
-  date: Data
-  education: Educação
-  email: Email
-  endDate: Data de término
-  fluency: Fluência
-  highlights: Destaques
-  image: Imagem
-  institution: Instituição
-  interests: Interesses
-  issuer: Emissor
-  keywords: Palavras chave
-  label: Título
-  language: Idioma
-  languages: Idiomas
-  level: Nível
-  location: Localização
-  name: Nome
-  network: Rede
-  organization: Organização
-  phone: Telefone
-  position: Posição
-  postalCode: Código postal
-  profiles: Perfis
-  projects: Projetos
-  publications: Publicações
-  publisher: Editora
-  reference: Referência
-  references: Referências
-  region: Região
-  releaseDate: Data de lançamento
-  score: Pontuação
-  skills: Habilidades
-  startDate: Data de início
-  studyType: Tipo de estudo
-  summary: Resumo
-  table_of_contents: Tópicos
-  title: Título
-  url: Url
-  username: Usuário
-  volunteer: Voluntário
-  work: Trabalho
+  address: 地址
+  area: Area
+  awarder: Awarder
+  awards: Awards
+  basics: 基本信息
+  certificates: Certificates
+  city: City
+  countryCode: Country code
+  courses: Courses
+  date: Date
+  education: 教育经历
+  email: 电子邮箱
+  endDate: 截止日期
+  fluency: Fluency
+  highlights: Highlights
+  image: Image
+  institution: 毕业院校
+  interests: 研究方向
+  issuer: Issuer
+  keywords: Keywords
+  label: 职业
+  language: Language
+  languages: Languages
+  level: Level
+  location: 地点
+  name: 名称
+  network: Network
+  organization: Organization
+  phone: Phone
+  position: 职位
+  postalCode: Postal Code
+  profiles: Profiles
+  projects: Projects
+  publications: Publications
+  publisher: Publisher
+  reference: Reference
+  references: References
+  region: Region
+  releaseDate: Release date
+  score: Score
+  skills: Skills
+  startDate: 开始日期
+  studyType: Study type
+  summary: 简介
+  table_of_contents: Table of Contents
+  title: Title
+  url: 网址
+  username: Username
+  volunteer: Volunteer
+  work: 工作经历

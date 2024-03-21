@@ -134,6 +134,7 @@ Feel free to add your own page(s) by sending a PR.
 <a href="https://www.zla.app/" target="_blank">★</a>
 <a href="https://stavros.github.io" target="_blank">★</a>
 <a href="https://ericslyman.com" target="_blank">★</a>
+<a href="https://ztjona.github.io/" target="_blank">★</a>
 </td>
 </tr>
 <tr>
@@ -152,11 +153,11 @@ Feel free to add your own page(s) by sending a PR.
 <td>Courses</td>
 <td>
 CMU PGM (<a href="https://sailinglab.github.io/pgm-spring-2019/" target="_blank">S-19</a>) <br>
-CMU DeepRL (<a href="https://cmudeeprl.github.io/703website_f19/" target="_blank">F-19</a>, <a href="https://cmudeeprl.github.io/Spring202010403website/" target="_blank">S-20</a>, <a href="https://cmudeeprl.github.io/703website/" target="_blank">F-20</a>, <a href="https://cmudeeprl.github.io/403_website/" target="_blank">S-21</a>, <a href="https://cmudeeprl.github.io/703website_f21/" target="_blank">F-21</a>, <a href="https://cmudeeprl.github.io/403website_s22/" target="_blank">S-22</a>) <br>
+CMU DeepRL (<a href="https://cmudeeprl.github.io/403_website/" target="_blank">S-21</a>, <a href="https://cmudeeprl.github.io/703website_f21/" target="_blank">F-21</a>, <a href="https://cmudeeprl.github.io/403website_s22/" target="_blank">S-22</a>, <a href="https://cmudeeprl.github.io/703website_f22/" target="_blank">F-22</a>, <a href="https://cmudeeprl.github.io/403website_s23/" target="_blank">S-23</a>, <a href="https://cmudeeprl.github.io/703website_f23/" target="_blank">F-23</a>) <br>
 CMU MMML (<a href="https://cmu-multicomp-lab.github.io/mmml-course/fall2020/" target="_blank">F-20</a>, <a href="https://cmu-multicomp-lab.github.io/mmml-course/fall2022/" target="_blank">F-22</a>) <br>
 CMU AMMML (<a href="https://cmu-multicomp-lab.github.io/adv-mmml-course/spring2022/" target="_blank">S-22</a>, <a href="https://cmu-multicomp-lab.github.io/adv-mmml-course/spring2023/" target="_blank">S-23</a>) <br>
 CMU ASI (<a href="https://cmu-multicomp-lab.github.io/asi-course/spring2023/" target="_blank">S-23</a>) <br>
-CMU Distributed Systems (<a href="https://andrew.cmu.edu/course/15-440/" target="_blank">S-21</a>)
+CMU Distributed Systems (<a href="https://andrew.cmu.edu/course/15-440/" target="_blank">S-24</a>)
 </td>
 </tr>
 <tr>
@@ -192,39 +193,38 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
 
 ## Table Of Contents
 
-- [multi-language-al-folio](#multi-language-al-folio)
-  - [User community](#user-community)
-  - [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
-    - [Desktop](#desktop)
-    - [Mobile](#mobile)
-  - [Table Of Contents](#table-of-contents)
-  - [Getting started](#getting-started)
-  - [Installing](#installing)
-  - [Customizing](#customizing)
-  - [Features](#features)
-    - [Multi Language Support](#multi-language-support)
-    - [Light/Dark Mode](#lightdark-mode)
-    - [CV](#cv)
-    - [People](#people)
-    - [Publications](#publications)
-    - [Collections](#collections)
-    - [Layouts](#layouts)
-      - [The iconic style of Distill](#the-iconic-style-of-distill)
-      - [Full support for math \& code](#full-support-for-math--code)
-      - [Photos, Audio, Video and more](#photos-audio-video-and-more)
-    - [Other features](#other-features)
-      - [GitHub's repositories and user stats](#githubs-repositories-and-user-stats)
-      - [Theming](#theming)
-      - [Social media previews](#social-media-previews)
-      - [Atom (RSS-like) Feed](#atom-rss-like-feed)
-      - [Related posts](#related-posts)
-      - [Code quality checks](#code-quality-checks)
-  - [FAQ](#faq)
-  - [Contributing](#contributing)
-    - [Maintainers](#maintainers)
-    - [All Contributors](#all-contributors)
-  - [Star History](#star-history)
-  - [License](#license)
+- [User community](#user-community)
+- [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
+  - [Desktop](#desktop)
+  - [Mobile](#mobile)
+- [Table Of Contents](#table-of-contents)
+- [Getting started](#getting-started)
+- [Installing](#installing)
+- [Customizing](#customizing)
+- [Features](#features)
+  - [Multi Language Support](#multi-language-support)
+  - [Light/Dark Mode](#lightdark-mode)
+  - [CV](#cv)
+  - [People](#people)
+  - [Publications](#publications)
+  - [Collections](#collections)
+  - [Layouts](#layouts)
+    - [The iconic style of Distill](#the-iconic-style-of-distill)
+    - [Full support for math \& code](#full-support-for-math--code)
+    - [Photos, Audio, Video and more](#photos-audio-video-and-more)
+  - [Other features](#other-features)
+    - [GitHub's repositories and user stats](#githubs-repositories-and-user-stats)
+    - [Theming](#theming)
+    - [Social media previews](#social-media-previews)
+    - [Atom (RSS-like) Feed](#atom-rss-like-feed)
+    - [Related posts](#related-posts)
+    - [Code quality checks](#code-quality-checks)
+- [FAQ](#faq)
+- [Contributing](#contributing)
+  - [Maintainers](#maintainers)
+  - [All Contributors](#all-contributors)
+- [Star History](#star-history)
+- [License](#license)
 
 ## Getting started
 
