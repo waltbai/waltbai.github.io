@@ -13,7 +13,7 @@ nav_order: 2
 
 <div class="publications">
 
-{% preprint %}
+{% bibliography --file papers %}
 
 </div>
 
@@ -21,6 +21,6 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --file preprints %}
 
 </div>
