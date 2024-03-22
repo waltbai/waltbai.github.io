@@ -9,6 +9,16 @@ nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
+## Preprints
+
+<div class="publications">
+
+{% preprint %}
+
+</div>
+
+## Journal and Conference Papers
+
 <div class="publications">
 
 {% bibliography %}
