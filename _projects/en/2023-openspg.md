@@ -7,5 +7,4 @@ description: >
 
 start_date: 2023
 role: participant
-url: https://spg.openkg.cn/en-US
 ---

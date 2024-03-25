@@ -18,7 +18,7 @@ toc:
 <!-- Display categorized projects -->
   {% for category in page.display_categories %}
     <h2 class="category">{{ category }} projects</h2>
-    {% assign categorized_projects = site.projects %}
+    {% assign categorized_projects = site.projects | where: "category", category %}
     {% assign sorted_projects = categorized_projects | sort: "start_date" %}
     <ul class="card-text font-weight-light list-group list-group-flush">
       {% for project in sorted_projects %}
@@ -35,13 +35,13 @@ toc:
               {% endif %}
               <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
             </div>
-          </div>
-          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-            <h6 class="title font-weight-bold ml-1 ml-md-4">
-              <a href="{{ project.url }}">{{ project.title }}</a>
-            </h6>
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ project.description }}</h6>
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Role: {{ project.role }}</h6>
+            <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+              <h6 class="title font-weight-bold ml-1 ml-md-4">
+                <a href="{{ project.url }}">{{ project.title }}</a>
+              </h6>
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ project.description }}</h6>
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Role: {{ project.role }}</h6>
+            </div>
           </div>
         </li>
       {% endfor %}
@@ -65,13 +65,13 @@ toc:
             {% endif %}
             <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
           </div>
-        </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="{{ project.url }}">{{ project.title }}</a>
-          </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ project.description }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Role: {{ project.role }}</h6>
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="{{ project.url }}">{{ project.title }}</a>
+            </h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ project.description }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Role: {{ project.role }}</h6>
+          </div>
         </div>
       </li>
     {% endfor %}
