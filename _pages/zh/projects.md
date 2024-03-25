@@ -7,7 +7,7 @@ title: 科研项目
 nav: true
 nav_order: 3
 
-display_categories: [开源, 国家自然科学基金]
+display_categories: [开源]
 
 toc:
   sidebar: left
@@ -38,11 +38,9 @@ toc:
               </div>
               <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
                 <h6 class="title font-weight-bold ml-1 ml-md-4">
-                  <a href="{{ project.url }}">
-                    {{ project.title }}
-                    {% if project.type %} &middot; {{ project.type }} {% endif %}
-                    {% if project.role %} &middot; {{ project.role }} {% endif %}
-                  </a>
+                  <a href="{{ project.url }}">{{ project.title }}</a>
+                  {% if project.type %} &middot; {{ project.type }} {% endif %}
+                  {% if project.role %} &middot; {{ project.role }} {% endif %}
                 </h6>
                 <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ project.description }}</h6>
               </div>
@@ -73,11 +71,9 @@ toc:
             </div>
             <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
               <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="{{ project.url }}">
-                  {{ project.title }}
-                  {% if project.type %} &middot; {{ project.type }} {% endif %}
-                  {% if project.role %} &middot; {{ project.role }} {% endif %}
-                </a>
+                <a href="{{ project.url }}">{{ project.title }}</a>
+                {% if project.type %} &middot; {{ project.type }} {% endif %}
+                {% if project.role %} &middot; {{ project.role }} {% endif %}
               </h6>
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ project.description }}</h6>
             </div>
