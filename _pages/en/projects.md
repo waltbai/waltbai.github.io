@@ -17,11 +17,12 @@ toc:
 {% if site.enable_project_categories and page.display_categories %}
 <!-- Display categorized projects -->
   {% for category in page.display_categories %}
-    ## {{ category }} projects
+    <h2 id="{{ category }}-projects"> {{ category }} projects </h2>
     {% assign categorized_projects = site.projects | where: "category", category %}
     {% assign sorted_projects = categorized_projects | sort: "start_date" %}
     <ol class="bibliography">
     {% for project in sorted_projects %}
+      <li>
       <div class="row">
         <div class="col-sm-2 abbr">
           {% if project.start_date %}
@@ -54,7 +55,8 @@ toc:
             </div>
           {% endif %}
         </div>
-      </div>  
+      </div>
+      </li>
     {% endfor %}
     </ol>
   {% endfor %}
@@ -63,6 +65,7 @@ toc:
   {% assign sorted_projects = site.projects | sort: "start_date" %}
   <ol class="bibliography">
   {% for project in sorted_projects %}
+    <li>
     <div class="row">
       <div class="col-sm-2 abbr">
         {% if project.start_date %}
@@ -96,6 +99,7 @@ toc:
         </div>
       {% endif %}
     </div>
+    </li>
   {% endfor %}
   </ol>
 {% endif %}
