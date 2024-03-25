@@ -2,12 +2,12 @@
 page_id: projects
 layout: page
 permalink: /projects/
-title: Projects
+title: 科研项目
 
 nav: true
 nav_order: 3
 
-display_categories: [Open-source, NSFC]
+display_categories: [开源, 国家自然科学基金]
 
 toc:
   sidebar: left
@@ -17,7 +17,7 @@ toc:
 {% if site.enable_project_categories and page.display_categories %}
 <!-- Display categorized projects -->
   {% for category in page.display_categories %}
-    <h2 class="category">{{ category }} projects</h2>
+    <h2 class="category">{{ category }}项目</h2>
     {% assign categorized_projects = site.projects | where: "category", category %}
     {% assign sorted_projects = categorized_projects | sort: "start_date" %}
     <ul class="card-text font-weight-light list-group list-group-flush">
