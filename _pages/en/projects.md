@@ -7,7 +7,7 @@ title: Projects
 nav: true
 nav_order: 3
 
-display_categories: [Open-source]
+display_categories: [NSFC, Open-source]
 
 toc:
   sidebar: left
@@ -17,9 +17,10 @@ toc:
 {% if site.enable_project_categories and page.display_categories %}
 <!-- Display categorized projects -->
   {% for category in page.display_categories %}
-    <h2 class="title font-weight-bold">{{ category }} projects</h2>
+    ## {{ category }} projects
     {% assign categorized_projects = site.projects | where: "category", category %}
     {% assign sorted_projects = categorized_projects | sort: "start_date" %}
+    <ol class="bibliography">
     {% for project in sorted_projects %}
       <div class="row">
         <div class="col-sm-2 abbr">
@@ -41,24 +42,26 @@ toc:
             {% if project.role %} {{ project.role }} {% endif %}
             {% if project.type %} &middot; {{ project.type }} {% endif %}
           </div>
-        </div>
-        <div class="links">
+          <div class="links">
+            {% if project.description %}
+              <a class="abstract btn btn-sm z-depth-0" role="button">ABS</a>
+            {% endif %}
+          </div>
           {% if project.description %}
-            <a class="abstract btn btn-sm z-depth-0" role="button">ABS</a>
+            <!-- Hidden abstract block -->
+            <div class="abstract hidden">
+              <p>{{ project.description }}</p>
+            </div>
           {% endif %}
         </div>
-        {% if project.description %}
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>{{ project.description }}</p>
-          </div>
-        {% endif %}
-      </div>
+      </div>  
     {% endfor %}
   {% endfor %}
+  </ol>
 {% else %}
 <!-- Display projects without categories -->
   {% assign sorted_projects = site.projects | sort: "start_date" %}
+  <ol class="bibliography">
   {% for project in sorted_projects %}
     <div class="row">
       <div class="col-sm-2 abbr">
@@ -94,5 +97,6 @@ toc:
       {% endif %}
     </div>
   {% endfor %}
+  </ol>
 {% endif %}
 </div>
