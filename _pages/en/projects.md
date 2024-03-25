@@ -56,8 +56,8 @@ toc:
         </div>
       </div>  
     {% endfor %}
+    </ol>
   {% endfor %}
-  </ol>
 {% else %}
 <!-- Display projects without categories -->
   {% assign sorted_projects = site.projects | sort: "start_date" %}
