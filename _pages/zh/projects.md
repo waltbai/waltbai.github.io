@@ -13,12 +13,12 @@ toc:
   sidebar: left
 ---
 
-<div class="projects">
+<div class="cv">
 {% if site.enable_project_categories and page.display_categories %}
 <!-- Display categorized projects -->
   {% for category in page.display_categories %}
     <div class="card mt-3 p-3">
-      <h2 class="category">{{ category }}项目</h2>
+      <h2 class="card-title font-weight-medium">{{ category }}项目</h2>
       {% assign categorized_projects = site.projects | where: "category", category %}
       {% assign sorted_projects = categorized_projects | sort: "start_date" %}
       <ul class="card-text font-weight-light list-group list-group-flush">
@@ -40,8 +40,8 @@ toc:
                 <h6 class="title font-weight-bold ml-1 ml-md-4">
                   <a href="{{ project.url }}">
                     {{ project.title }}
-                    {% if project.type %} &nbsp·&nbsp {{ project.type }} {% endif %}
-                    {% if project.role %} &nbsp·&nbsp {{ project.role }} {% endif %}
+                    {% if project.type %} &middot; {{ project.type }} {% endif %}
+                    {% if project.role %} &middot; {{ project.role }} {% endif %}
                   </a>
                 </h6>
                 <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ project.description }}</h6>
@@ -75,8 +75,8 @@ toc:
               <h6 class="title font-weight-bold ml-1 ml-md-4">
                 <a href="{{ project.url }}">
                   {{ project.title }}
-                  {% if project.type %} &nbsp·&nbsp {{ project.type }} {% endif %}
-                  {% if project.role %} &nbsp·&nbsp {{ project.role }} {% endif %}
+                  {% if project.type %} &middot; {{ project.type }} {% endif %}
+                  {% if project.role %} &middot; {{ project.role }} {% endif %}
                 </a>
               </h6>
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ project.description }}</h6>
