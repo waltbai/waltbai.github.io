@@ -7,7 +7,7 @@ title: Projects
 nav: true
 nav_order: 3
 
-display_categories: [NSFC, Open-source]
+display_categories: [Open-source]
 ---
 
 {% assign project_suffix = " projects" %}

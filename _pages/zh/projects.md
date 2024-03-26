@@ -7,7 +7,7 @@ title: 科研项目
 nav: true
 nav_order: 3
 
-display_categories: [国家自然科学基金, 开源]
+display_categories: [开源]
 ---
 
 {% assign project_suffix = "项目" %}
