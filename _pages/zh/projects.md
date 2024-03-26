@@ -2,7 +2,7 @@
 page_id: projects
 layout: page
 permalink: /projects/
-title: Projects
+title: 科研项目
 
 nav: true
 nav_order: 3
