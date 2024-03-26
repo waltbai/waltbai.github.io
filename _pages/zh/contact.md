@@ -7,11 +7,11 @@ nav: true
 nav_order: 5
 ---
 
-**邮箱**:  
+<span class="font-weight-bold">邮箱</span> :  
 bailong@ict.ac.cn (主要)  
 bailong7799@gmail.com
 
-**地址**:  
+<span class="font-weight-bold">地址</span>:  
 NExT++ Centre  
 COM4-04-01, 3A Research Link  
 National University of Singapore  
