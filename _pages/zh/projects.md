@@ -36,7 +36,7 @@ display_categories: [开源]
               <div class="title font-weight-bold ml-1 ml-md-4">
                 <a href="{{ project.url }}">{{ project.title }}</a>
               </div>
-              <div class="periodical font-weight-bold ml-1 ml-md-4">
+              <div class="periodical ml-1 ml-md-4">
                 {% if project.role %} {{ project.role }} {% endif %}
                 {% if project.type %} &middot; {{ project.type }} {% endif %}
               </div>
@@ -79,7 +79,7 @@ display_categories: [开源]
             <div class="title font-weight-bold ml-1 ml-md-4">
               <a href="{{ project.url }}">{{ project.title }}</a>
             </div>
-            <div class="periodical font-weight-bold ml-1 ml-md-4">
+            <div class="periodical ml-1 ml-md-4">
               {% if project.role %} {{ project.role }} {% endif %}
               {% if project.type %} &middot; {{ project.type }} {% endif %}
             </div>
