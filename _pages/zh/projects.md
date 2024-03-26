@@ -37,8 +37,11 @@ display_categories: [国家自然科学基金, 开源]
                 <a href="{{ project.url }}">{{ project.title }}</a>
               </div>
               <div class="periodical ml-1 ml-md-4">
+                {% if project.type %} {{ project.type }} {% endif %}
+                {% if project.code %} ({{ project.code }}) {% endif %}
+              </div>
+              <div class="periodical ml-1 ml-md-4">
                 {% if project.role %} {{ project.role }} {% endif %}
-                {% if project.type %} &middot; {{ project.type }} {% endif %}
               </div>
               <div class="links ml-1 ml-md-4">
                 {% if project.description %}
@@ -80,8 +83,11 @@ display_categories: [国家自然科学基金, 开源]
               <a href="{{ project.url }}">{{ project.title }}</a>
             </div>
             <div class="periodical ml-1 ml-md-4">
+              {% if project.type %} {{ project.type }} {% endif %}
+              {% if project.code %} ({{ project.code }}) {% endif %}
+            </div>
+            <div class="periodical ml-1 ml-md-4">
               {% if project.role %} {{ project.role }} {% endif %}
-              {% if project.type %} &middot; {{ project.type }} {% endif %}
             </div>
           </div>
           <div class="links ml-1 ml-md-4">
