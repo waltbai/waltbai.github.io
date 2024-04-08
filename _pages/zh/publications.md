@@ -7,10 +7,6 @@ description: "完整论文列表请见本人<a href='https://scholar.google.com/
 nav: true
 nav_order: 2
 ---
-{% assign abstract_name = "摘要" %}
-{% assign code_name = "代码" %}
-{% assign html_name = "网页" %}
-
 <!-- _pages/publications.md -->
 ## 预印本
 

@@ -9,10 +9,6 @@ nav_order: 2
 # toc:
 #   sidebar: left
 ---
-{% assign abstract_name = "ABS" %}
-{% assign code_name = "CODE" %}
-{% assign html_name = "HTML" %}
-
 <!-- _pages/publications.md -->
 ## Preprints
 
