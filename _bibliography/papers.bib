@@ -16,12 +16,14 @@
 
 @inproceedings{coling-2024-2,
   abbr      = {COLING-2024},
+  html = {https://arxiv.org/abs/2404.01767},
   title     = {Class-Incremental Few-Shot Event Detection},
   author    = {Zhao, Kailin 
                and Jin, Xiaolong 
                and Bai, Long 
                and Guo, Jiafeng 
                and Cheng, Xueqi},
+  abstract = {Event detection is one of the fundamental tasks in information extraction and knowledge graph. However, a realistic event detection system often needs to deal with new event classes constantly. These new classes usually have only a few labeled instances as it is time-consuming and labor-intensive to annotate a large number of unlabeled instances. Therefore, this paper proposes a new task, called class-incremental few-shot event detection. Nevertheless, this task faces two problems, i.e., old knowledge forgetting and new class overfitting. To solve these problems, this paper further presents a novel knowledge distillation and prompt learning based method, called Prompt-KD. Specifically, to handle the forgetting problem about old knowledge, Prompt-KD develops an attention based multi-teacher knowledge distillation framework, where the ancestor teacher model pre-trained on base classes is reused in all learning sessions, and the father teacher model derives the current student model via adaptation. On the other hand, in order to cope with the few-shot learning scenario and alleviate the corresponding new class overfitting problem, Prompt-KD is also equipped with a prompt learning mechanism. Extensive experiments on two benchmark datasets, i.e., FewEvent and MAVEN, demonstrate the superior performance of Prompt-KD.},
   booktitle = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
   month     = may,
   year      = {2024}
@@ -29,6 +31,7 @@
 
 @inproceedings{coling-2024-2,
   abbr      = {COLING-2024},
+  html = {https://arxiv.org/abs/2309.12960},
   code      = {https://github.com/waysonren/PerNee},
   title     = {Nested Event Extraction upon Pivot Element Recogniton},
   author    = {Ren, Weicheng 
@@ -40,6 +43,7 @@
                and Guan, Saiping 
                and Guo, Jiafeng 
                and Cheng, Xueqi},
+  abstract = {Nested Event Extraction (NEE) aims to extract complex event structures where an event contains other events as its arguments recursively. Nested events involve a kind of Pivot Elements (PEs) that simultaneously act as arguments of outer-nest events and as triggers of inner-nest events, and thus connect them into nested structures. This special characteristic of PEs brings challenges to existing NEE methods, as they cannot well cope with the dual identities of PEs. Therefore, this paper proposes a new model, called PerNee, which extracts nested events mainly based on recognizing PEs. Specifically, PerNee first recognizes the triggers of both inner-nest and outer-nest events and further recognizes the PEs via classifying the relation type between trigger pairs. The model uses prompt learning to incorporate information from both event types and argument roles for better trigger and argument representations to improve NEE performance. Since existing NEE datasets (e.g., Genia11) are limited to specific domains and contain a narrow range of event types with nested structures, we systematically categorize nested events in the generic domain and construct a new NEE dataset, called ACE2005-Nest. Experimental results demonstrate that PerNee consistently achieves state-of-the-art performance on ACE2005-Nest, Genia11, and Genia13. The ACE2005-Nest dataset and the code of the PerNee model are available at https://github.com/waysonren/PerNee .},
   booktitle = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
   month     = may,
   year      = {2024}
@@ -47,6 +51,7 @@
 
 @inproceedings{coling-2024-1,
   abbr      = {COLING-2024},
+  html = {https://arxiv.org/abs/2404.01695},
   title     = {Selective Temporal Knowledge Graph Reasoning},
   author    = {Hou, Zhongni 
                and Jin, Xiaolong 
@@ -54,6 +59,7 @@
                and Bai, Long 
                and Guo, Jiafeng 
                and Cheng, Xueqi},
+  abstract = {Temporal Knowledge Graph (TKG), which characterizes temporally evolving facts in the form of (subject, relation, object, timestamp), has attracted much attention recently. TKG reasoning aims to predict future facts based on given historical ones. However, existing TKG reasoning models are unable to abstain from predictions they are uncertain, which will inevitably bring risks in real-world applications. Thus, in this paper, we propose an abstention mechanism for TKG reasoning, which helps the existing models make selective, instead of indiscriminate, predictions. Specifically, we develop a confidence estimator, called Confidence Estimator with History (CEHis), to enable the existing TKG reasoning models to first estimate their confidence in making predictions, and then abstain from those with low confidence. To do so, CEHis takes two kinds of information into consideration, namely, the certainty of the current prediction and the accuracy of historical predictions. Experiments with representative TKG reasoning models on two benchmark datasets demonstrate the effectiveness of the proposed CEHis.},
   booktitle = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
   month     = may,
   year      = {2024}
