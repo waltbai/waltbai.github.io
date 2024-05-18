@@ -3,6 +3,50 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{acl-2024,
+  abbr      = {ACL-2024},
+  html      = {https://arxiv.org/abs/2403.07969},
+  code      = {https://github.com/ICT-GoKnow/KnowCoder},
+  title     = {KnowCoder: Coding Structured Knowledge into LLMs for Universal Information Extraction},
+  author    = {Li, Zixuan and 
+               Zeng, Yutao and 
+               Zuo, Yuxin and 
+               Ren, Weicheng and 
+               Liu, Wenxuan and 
+               Su, Miao and 
+               Guo, Yucan and 
+               Liu, Yantao and 
+               Li, Xiang and
+               Hu, Zhilei and 
+               Bai, Long and 
+               Li, Wei and 
+               Liu, Yidan and 
+               Yang, Pan and 
+               Jin, Xiaolong and 
+               Guo, Jiafeng and 
+               Cheng, Xueqi },
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics},
+  month     = aug,
+  year      = {2024}
+}
+
+@misc{ksem-2024,
+  abbr      = {KSEM-2024},
+  html      = {https://arxiv.org/abs/2310.14174},
+  title     = {An In-Context Schema Understanding Method for Knowledge Base Question Answering},
+  author    = {Liu, Yantao and
+               Li, Zixuan and 
+               Jin, Xiaolong and
+               Guo, Yucan and 
+               Bai,  Long and 
+               Guan, Saiping and 
+               Guo, Jiafeng and 
+               Cheng, Xueqi },
+  booktitle = {Proceedings of the 17th International Conference on Knowledge Science, Engineering and Management},
+  month     = aug,
+  year      = {2024}
+}
+
 @article{jcip-2024,
   abbr     = {JCIP-2024},
   html     = {http://jcip.cipsc.org.cn/CN/Y2024/V38/I2/46},
@@ -16,14 +60,14 @@
 
 @inproceedings{coling-2024-2,
   abbr      = {COLING-2024},
-  html = {https://arxiv.org/abs/2404.01767},
+  html      = {https://arxiv.org/abs/2404.01767},
   title     = {Class-Incremental Few-Shot Event Detection},
   author    = {Zhao, Kailin 
                and Jin, Xiaolong 
                and Bai, Long 
                and Guo, Jiafeng 
                and Cheng, Xueqi},
-  abstract = {Event detection is one of the fundamental tasks in information extraction and knowledge graph. However, a realistic event detection system often needs to deal with new event classes constantly. These new classes usually have only a few labeled instances as it is time-consuming and labor-intensive to annotate a large number of unlabeled instances. Therefore, this paper proposes a new task, called class-incremental few-shot event detection. Nevertheless, this task faces two problems, i.e., old knowledge forgetting and new class overfitting. To solve these problems, this paper further presents a novel knowledge distillation and prompt learning based method, called Prompt-KD. Specifically, to handle the forgetting problem about old knowledge, Prompt-KD develops an attention based multi-teacher knowledge distillation framework, where the ancestor teacher model pre-trained on base classes is reused in all learning sessions, and the father teacher model derives the current student model via adaptation. On the other hand, in order to cope with the few-shot learning scenario and alleviate the corresponding new class overfitting problem, Prompt-KD is also equipped with a prompt learning mechanism. Extensive experiments on two benchmark datasets, i.e., FewEvent and MAVEN, demonstrate the superior performance of Prompt-KD.},
+  abstract  = {Event detection is one of the fundamental tasks in information extraction and knowledge graph. However, a realistic event detection system often needs to deal with new event classes constantly. These new classes usually have only a few labeled instances as it is time-consuming and labor-intensive to annotate a large number of unlabeled instances. Therefore, this paper proposes a new task, called class-incremental few-shot event detection. Nevertheless, this task faces two problems, i.e., old knowledge forgetting and new class overfitting. To solve these problems, this paper further presents a novel knowledge distillation and prompt learning based method, called Prompt-KD. Specifically, to handle the forgetting problem about old knowledge, Prompt-KD develops an attention based multi-teacher knowledge distillation framework, where the ancestor teacher model pre-trained on base classes is reused in all learning sessions, and the father teacher model derives the current student model via adaptation. On the other hand, in order to cope with the few-shot learning scenario and alleviate the corresponding new class overfitting problem, Prompt-KD is also equipped with a prompt learning mechanism. Extensive experiments on two benchmark datasets, i.e., FewEvent and MAVEN, demonstrate the superior performance of Prompt-KD.},
   booktitle = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
   month     = may,
   year      = {2024}
@@ -31,7 +75,7 @@
 
 @inproceedings{coling-2024-2,
   abbr      = {COLING-2024},
-  html = {https://arxiv.org/abs/2309.12960},
+  html      = {https://arxiv.org/abs/2309.12960},
   code      = {https://github.com/waysonren/PerNee},
   title     = {Nested Event Extraction upon Pivot Element Recogniton},
   author    = {Ren, Weicheng 
@@ -43,7 +87,7 @@
                and Guan, Saiping 
                and Guo, Jiafeng 
                and Cheng, Xueqi},
-  abstract = {Nested Event Extraction (NEE) aims to extract complex event structures where an event contains other events as its arguments recursively. Nested events involve a kind of Pivot Elements (PEs) that simultaneously act as arguments of outer-nest events and as triggers of inner-nest events, and thus connect them into nested structures. This special characteristic of PEs brings challenges to existing NEE methods, as they cannot well cope with the dual identities of PEs. Therefore, this paper proposes a new model, called PerNee, which extracts nested events mainly based on recognizing PEs. Specifically, PerNee first recognizes the triggers of both inner-nest and outer-nest events and further recognizes the PEs via classifying the relation type between trigger pairs. The model uses prompt learning to incorporate information from both event types and argument roles for better trigger and argument representations to improve NEE performance. Since existing NEE datasets (e.g., Genia11) are limited to specific domains and contain a narrow range of event types with nested structures, we systematically categorize nested events in the generic domain and construct a new NEE dataset, called ACE2005-Nest. Experimental results demonstrate that PerNee consistently achieves state-of-the-art performance on ACE2005-Nest, Genia11, and Genia13. The ACE2005-Nest dataset and the code of the PerNee model are available at https://github.com/waysonren/PerNee .},
+  abstract  = {Nested Event Extraction (NEE) aims to extract complex event structures where an event contains other events as its arguments recursively. Nested events involve a kind of Pivot Elements (PEs) that simultaneously act as arguments of outer-nest events and as triggers of inner-nest events, and thus connect them into nested structures. This special characteristic of PEs brings challenges to existing NEE methods, as they cannot well cope with the dual identities of PEs. Therefore, this paper proposes a new model, called PerNee, which extracts nested events mainly based on recognizing PEs. Specifically, PerNee first recognizes the triggers of both inner-nest and outer-nest events and further recognizes the PEs via classifying the relation type between trigger pairs. The model uses prompt learning to incorporate information from both event types and argument roles for better trigger and argument representations to improve NEE performance. Since existing NEE datasets (e.g., Genia11) are limited to specific domains and contain a narrow range of event types with nested structures, we systematically categorize nested events in the generic domain and construct a new NEE dataset, called ACE2005-Nest. Experimental results demonstrate that PerNee consistently achieves state-of-the-art performance on ACE2005-Nest, Genia11, and Genia13. The ACE2005-Nest dataset and the code of the PerNee model are available at https://github.com/waysonren/PerNee .},
   booktitle = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
   month     = may,
   year      = {2024}
@@ -51,7 +95,7 @@
 
 @inproceedings{coling-2024-1,
   abbr      = {COLING-2024},
-  html = {https://arxiv.org/abs/2404.01695},
+  html      = {https://arxiv.org/abs/2404.01695},
   title     = {Selective Temporal Knowledge Graph Reasoning},
   author    = {Hou, Zhongni 
                and Jin, Xiaolong 
@@ -59,7 +103,7 @@
                and Bai, Long 
                and Guo, Jiafeng 
                and Cheng, Xueqi},
-  abstract = {Temporal Knowledge Graph (TKG), which characterizes temporally evolving facts in the form of (subject, relation, object, timestamp), has attracted much attention recently. TKG reasoning aims to predict future facts based on given historical ones. However, existing TKG reasoning models are unable to abstain from predictions they are uncertain, which will inevitably bring risks in real-world applications. Thus, in this paper, we propose an abstention mechanism for TKG reasoning, which helps the existing models make selective, instead of indiscriminate, predictions. Specifically, we develop a confidence estimator, called Confidence Estimator with History (CEHis), to enable the existing TKG reasoning models to first estimate their confidence in making predictions, and then abstain from those with low confidence. To do so, CEHis takes two kinds of information into consideration, namely, the certainty of the current prediction and the accuracy of historical predictions. Experiments with representative TKG reasoning models on two benchmark datasets demonstrate the effectiveness of the proposed CEHis.},
+  abstract  = {Temporal Knowledge Graph (TKG), which characterizes temporally evolving facts in the form of (subject, relation, object, timestamp), has attracted much attention recently. TKG reasoning aims to predict future facts based on given historical ones. However, existing TKG reasoning models are unable to abstain from predictions they are uncertain, which will inevitably bring risks in real-world applications. Thus, in this paper, we propose an abstention mechanism for TKG reasoning, which helps the existing models make selective, instead of indiscriminate, predictions. Specifically, we develop a confidence estimator, called Confidence Estimator with History (CEHis), to enable the existing TKG reasoning models to first estimate their confidence in making predictions, and then abstain from those with low confidence. To do so, CEHis takes two kinds of information into consideration, namely, the certainty of the current prediction and the accuracy of historical predictions. Experiments with representative TKG reasoning models on two benchmark datasets demonstrate the effectiveness of the proposed CEHis.},
   booktitle = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
   month     = may,
   year      = {2024}
@@ -200,14 +244,14 @@
 }
 
 @article{aes-2022,
-  abbr    = {AES-2022},
-  html = {https://www.ejournal.org.cn/CN/10.12263/DZXB.20220212},
-  title   = {面向知识库问答的问句语义解析研究综述},
-  author  = {仇韫琦 and 王元卓 and 白龙 and 尹芷仪 and 沈华伟 and 白硕},
+  abbr     = {AES-2022},
+  html     = {https://www.ejournal.org.cn/CN/10.12263/DZXB.20220212},
+  title    = {面向知识库问答的问句语义解析研究综述},
+  author   = {仇韫琦 and 王元卓 and 白龙 and 尹芷仪 and 沈华伟 and 白硕},
   abstract = {知识库问答（Knowledge Base Question Answering，KBQA）借助知识库中精度高、关联性强的结构化知识，为给定的复杂事实型问句提供准确、简短的答案.语义解析是知识库问答的主流方法之一，该类方法在给定的问句语义表征形式下，将非结构化的问句映射为结构化的语义表征，再将其改写为知识库查询获取答案。目前，面向知识库问答的语义解析方法主要面临三个挑战：首先是如何选择合适的语义表征形式以表达问句的语义，然后是如何解析问句的复杂语义并输出相应的语义表征，最后是如何应对特定领域中数据标注成本高昂、高质量数据匮乏的问题.本文从上述挑战出发，分析了知识库问答中常用的语义表征的特点与不足，然后梳理现有方法并总结分析其如何应对问句的复杂语义，接着介绍了当前方法在标注数据匮乏的低资源场景下的尝试，最后展望并讨论了面向知识库问答的语义解析的未来发展方向。},
-  journal = {电子学报},
-  month   = sep,
-  year    = {2022}
+  journal  = {电子学报},
+  month    = sep,
+  year     = {2022}
 }
 
 @article{tkde-2022,
