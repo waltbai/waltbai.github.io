@@ -16,6 +16,7 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: #{$black-color};
   --global-card-bg-color: #{$white-color};
+  --global-highlight-color: #{$red-color-dark};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -56,7 +57,7 @@ html[data-theme="dark"] {
   --global-bg-color: #{$grey-color-dark};
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
+  --global-text-color-light: #{$grey-color};
   --global-theme-color: #{$cyan-color};
   --global-hover-color: #{$cyan-color};
   --global-hover-text-color: #{$white-color};

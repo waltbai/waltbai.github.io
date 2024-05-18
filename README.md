@@ -9,6 +9,7 @@
 ---
 
 [![deploy](https://github.com/george-gca/multi-language-al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/george-gca/multi-language-al-folio/actions/workflows/deploy.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd22b3da-3970-4612-8dee-5579601589a3/deploy-status)](https://app.netlify.com/sites/multi-language-al-folio/deploys)
 [![Maintainers](https://img.shields.io/badge/maintainers-4-success.svg)](#maintainers)
 [![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/alshedivat/al-folio/graphs/contributors/)
 [![Docker Image Version](https://img.shields.io/docker/v/georgegca/multi-language-al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/georgegca/multi-language-al-folio)
@@ -135,6 +136,9 @@ Feel free to add your own page(s) by sending a PR.
 <a href="https://stavros.github.io" target="_blank">★</a>
 <a href="https://ericslyman.com" target="_blank">★</a>
 <a href="https://ztjona.github.io/" target="_blank">★</a>
+<a href="https://chrischoi314.github.io" target="_blank">★</a>
+<a href="https://riccobelli.faculty.polimi.it" target="_blank">★</a>
+<a href="https://kishanved.tech/" target="_blank">★</a>
 </td>
 </tr>
 <tr>
@@ -199,7 +203,7 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
   - [Mobile](#mobile)
 - [Table Of Contents](#table-of-contents)
 - [Getting started](#getting-started)
-- [Installing](#installing)
+- [Installing and Deploying](#installing-and-deploying)
 - [Customizing](#customizing)
 - [Features](#features)
   - [Multi Language Support](#multi-language-support)
@@ -228,11 +232,11 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
 
 ## Getting started
 
-Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/). Why Jekyll? Read [Andrej Karpathy's blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/)!
+Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/). Why Jekyll? Read [Andrej Karpathy's blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/)! Why write a blog? Read [Rachel Thomas blog post](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045).
 
-## Installing
+## Installing and Deploying
 
-For installation details please refer to [INSTALL.md](INSTALL.md).
+For installation and deployment details please refer to [INSTALL.md](INSTALL.md).
 
 ## Customizing
 
