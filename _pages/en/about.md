@@ -23,14 +23,3 @@ Before that, he obtained Ph.D degree from University of Chinese Academy of Scien
 
 Long Bai's research interests lie in Knowledge Graph (KG) and Natural Language Processing (NLP). 
 He is currently focusing on event-centric analysis, including event extraction, event relation extraction, event prediction, etc.
-
-## Academic Services
-
-**Conference Program Committee Member (Reviewer):**  
-AAAI-2023, ACL-2023, EMNLP-2023, AAAI-2024
-
-**Reviewer of ACL Rolling Review (ARR):**  
-ARR-2021 Nov, ARR-2022 Jan, ARR-2022 Feb, ARR-2022 Apr,  
-ARR-2023 Feb, ARR-2023 Oct, ARR-2023 Dec, ARR-2024 Feb,  
-ARR-2024 Apr
-

@@ -23,14 +23,3 @@ social: true # includes social icons at the bottom of the page
 2016年本科毕业于浙江大学。
 
 主要研究方向为知识图谱与自然语言处理技术，当前主要关注以事件为中心的信息获取与分析预测技术，包括事件抽取、事件关系抽取、事件预测等。
-
-## 学术服务
-
-<span class="font-weight-bold">会议审稿：</span>  
-AAAI-2023, ACL-2023, EMNLP-2023, AAAI-2024
-
-<span class="font-weight-bold">ACL Rolling Review (ARR)审稿：</span>  
-ARR-2021 Nov, ARR-2022 Jan, ARR-2022 Feb, ARR-2022 Apr,  
-ARR-2023 Feb, ARR-2023 Oct, ARR-2023 Dec, ARR-2024 Feb,  
-ARR-2024 Apr
-

@@ -3,7 +3,7 @@ page_id: service
 layout: page
 permalink: /service/
 title: Service
-nav: false
+nav: true
 nav_order: 4
 ---
 
