@@ -3,7 +3,7 @@ page_id: service
 layout: page
 permalink: /service/
 title: 学术服务
-nav: true
+nav: false
 nav_order: 4
 ---
 
