@@ -4,10 +4,10 @@ layout: page
 permalink: /projects/
 title: Projects
 
-nav: false
+nav: true
 nav_order: 3
 
-display_categories: []
+display_categories: [NSFC]
 ---
 
 {% assign project_suffix = " projects" %}

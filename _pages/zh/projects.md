@@ -4,10 +4,10 @@ layout: page
 permalink: /projects/
 title: 科研项目
 
-nav: false
+nav: true
 nav_order: 3
 
-display_categories: []
+display_categories: [国家自然科学基金]
 ---
 
 {% assign project_suffix = "项目" %}
