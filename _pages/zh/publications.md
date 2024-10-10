@@ -7,17 +7,6 @@ description: "完整论文列表请见本人<a href='https://scholar.google.com/
 nav: true
 nav_order: 2
 ---
-<!-- _pages/publications.md -->
-<!-- ## 预印本
-
-<div class="publications">
-
-{% bibliography --file preprints %}
-
-</div>
-
-## 期刊与会议论文 -->
-
 <div class="publications">
 
 {% bibliography --file papers %}

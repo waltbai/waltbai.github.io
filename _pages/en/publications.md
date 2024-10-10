@@ -9,17 +9,6 @@ nav_order: 2
 # toc:
 #   sidebar: left
 ---
-<!-- _pages/publications.md -->
-<!-- ## Preprints
-
-<div class="publications">
-
-{% bibliography --file preprints %}
-
-</div>
-
-## Journal and Conference Papers -->
-
 <div class="publications">
 
 {% bibliography --file papers %}
