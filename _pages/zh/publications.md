@@ -8,7 +8,7 @@ nav: true
 nav_order: 2
 ---
 <!-- _pages/publications.md -->
-## 预印本
+<!-- ## 预印本
 
 <div class="publications">
 
@@ -16,7 +16,7 @@ nav_order: 2
 
 </div>
 
-## 期刊与会议论文
+## 期刊与会议论文 -->
 
 <div class="publications">
 

@@ -10,7 +10,7 @@ nav_order: 2
 #   sidebar: left
 ---
 <!-- _pages/publications.md -->
-## Preprints
+<!-- ## Preprints
 
 <div class="publications">
 
@@ -18,7 +18,7 @@ nav_order: 2
 
 </div>
 
-## Journal and Conference Papers
+## Journal and Conference Papers -->
 
 <div class="publications">
 
