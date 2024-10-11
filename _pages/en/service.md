@@ -8,9 +8,11 @@ nav_order: 4
 ---
 
 **Conference Program Committee member (Reviewer):**  
-AAAI-2023, ACL-2023, EMNLP-2023, AAAI-2024
+2023: AAAI, ACL, EMNLP,  
+2024: AAAI, CCKS, NLPCC
 
 **Reviewer of ACL Rolling Review (ARR):**  
-ARR-2021 Nov, ARR-2022 Jan, ARR-2022 Feb, ARR-2022 Apr,  
-ARR-2023 Feb, ARR-2023 Oct, ARR-2023 Dec, ARR-2024 Feb,  
-ARR-2024 Apr, ARR-2024 Jun
+2021: Nov  
+2022: Jan, Feb, Apr  
+2023: Feb, Oct, Dec  
+2024: Feb, Apr, Jun, Aug
