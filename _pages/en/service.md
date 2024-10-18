@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-**Conference Area Chair**
+**Conference Area Chair**  
 2024: EMNLP Demo track
 
 **Conference Program Committee member (Reviewer):**  
