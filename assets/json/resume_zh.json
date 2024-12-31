@@ -9,8 +9,8 @@
   },
   "work": [
     {
-      "name": "中文开放知识图谱-SIGSPG",
-      "position": "成员",
+      "name": "中文开放知识图谱OpenKG",
+      "position": "SIGSPG兴趣小组成员",
       "startDate": "2024-09-04",
       "endDate": "现在"
     },
@@ -55,6 +55,14 @@
     {
       "name": "自然语言处理",
       "icon": "fa-solid fa-tag"
+    }
+  ],
+  "projects": [
+    {
+      "name": "复合事件分析预测研究",
+      "startDate": "2025-01-01",
+      "endDate": "2028-01-01",
+      "summary": "国家自然科学基金青年科学基金项目（6240073430）"
     }
   ]
 }
