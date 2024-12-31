@@ -2,7 +2,7 @@
 layout: page
 title: Composite Event Analysis and Prediction
 category: NSFC
-type: The National Youth Fund
+type: The NSFC National Youth Fund
 code: 6240073430
 
 start_date: 2025-01
