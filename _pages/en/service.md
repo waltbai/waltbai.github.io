@@ -13,7 +13,10 @@ nav_order: 4
 **Conference Program Committee member (Reviewer):**  
 2023: AAAI, ACL, EMNLP  
 2024: AAAI, CCKS, NLPCC, EMNLP Industry track, EMNLP Demo track  
-2025: AAAI
+2025: AAAI, NAACL Industry track
+
+**Area Chair of ACL Rolling Review (ARR):**  
+2024: Dec
 
 **Reviewer of ACL Rolling Review (ARR):**  
 2021: Nov  
