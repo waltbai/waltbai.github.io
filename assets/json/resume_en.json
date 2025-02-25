@@ -9,12 +9,6 @@
   },
   "work": [
     {
-      "name": "OpenKG",
-      "position": "Member of SIGSPG",
-      "startDate": "2024-09-04",
-      "endDate": "present"
-    },
-    {
       "name": "NExT++ Centre, National University of Singapore",
       "position": "Visiting Scholar",
       "startDate": "2023-12-18",
@@ -62,7 +56,7 @@
       "name": "Composite Event Analysis and Prediction",
       "startDate": "2025-01-01",
       "endDate": "2028-01-01",
-      "summary": "The NSFC National Youth Fund (6240073430)"
+      "summary": "The NSFC National Youth Fund"
     }
   ]
 }
