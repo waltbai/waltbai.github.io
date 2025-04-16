@@ -16,10 +16,12 @@ nav_order: 4
 2025: AAAI, NAACL Industry track
 
 <span class="font-weight-bold">ACL Rolling Review (ARR)领域主席：</span>  
-2024: Dec
+2024: Dec  
+2025: Feb
 
 <span class="font-weight-bold">ACL Rolling Review (ARR)审稿：</span>  
 2021: Nov  
 2022: Jan, Feb, Apr  
 2023: Feb, Oct, Dec  
-2024: Feb, Apr, Jun, Aug, Oct
+2024: Feb, Apr, Jun, Aug, Oct  
+2025: Feb
