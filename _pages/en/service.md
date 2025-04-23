@@ -7,6 +7,9 @@ nav: true
 nav_order: 4
 ---
 
+**Academic Organizations:**  
+2024-present: Member of OpenKG-SIGSPG
+
 **Conference Area Chair:**  
 2024: EMNLP Demo track
 
