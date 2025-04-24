@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-**Academic Organizations:**  
+**Organizations:**  
 2024-present: Member of OpenKG-SIGSPG
 
 **Conference Area Chair:**  

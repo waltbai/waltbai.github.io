@@ -7,8 +7,8 @@ nav: true
 nav_order: 4
 ---
 
-<span class="font-weight-bold">学术组织：</span>
-2024至今：OpenSPG-SIGSPG成员  
+<span class="font-weight-bold">学术组织：</span>  
+2024至今：OpenSPG-SIGSPG成员
 
 <span class="font-weight-bold">会议领域主席：</span>  
 2024: EMNLP Demo track
