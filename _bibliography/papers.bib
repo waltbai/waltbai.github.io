@@ -3,6 +3,53 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{acl-2025-3,
+  abbr      = {ACL-2025},
+  title     = {Towards Robust Universal Information Extraction: Dataset, Evaluation, and Solution},
+  author    = {Zhu, Jizhao and 
+               Shi, Akang and 
+               Li, Zixuan and 
+               Bai, Long and 
+               Jin, Xiaolong and 
+               Guo, Jiafeng and 
+               Cheng, Xueqi },
+  abstract  = {In this paper, we aim to enhance the robustness of Universal Information Extraction (UIE) by introducing a new benchmark dataset, a comprehensive evaluation, and a feasible solution. Existing robust benchmark datasets have two key limitations: 1) They generate only a limited range of perturbations for a single Information Extraction (IE) task, which fails to evaluate the robustness of UIE models effectively; 2) They rely on small models or handcrafted rules to generate perturbations, often resulting in unnatural adversarial examples. Considering the powerful generation capabilities of Large Language Models (LLMs), we introduce a new benchmark dataset for Robust UIE, called RUIE-Bench, which utilizes LLMs to generate more diverse and realistic perturbations across different IE tasks. Based on this dataset, we comprehensively evaluate existing UIE models and reveal that both LLM-based models and other models suffer from significant performance drops. To improve robustness and reduce training costs, we propose a data-augmentation solution that dynamically selects hard samples for iterative training based on the model's inference loss. Experimental results show that training with only 15% of the data leads to an average 7.5% relative performance improvement across three IE tasks.},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics},
+  year      = {2025}
+}
+
+@inproceedings{acl-2025-2,
+  abbr      = {ACL-2025},
+  title     = {G2S: A General-to-Specific Learning Framework for Temporal Knowledge Graph Forecasting with Large Language Models},
+  author    = {Bai, Long and 
+               Li, Zixuan and 
+               Jin, Xiaolong and 
+               Guo, Jiafeng and 
+               Cheng, Xueqi and 
+               Chua, Tat-Seng },
+  abstract  = {Forecasting over Temporal Knowledge Graphs (TKGs) which predicts future facts based on historical ones has received much attention. Recent studies have introduced Large Language Models (LLMs) for this task to enhance the models' generalization abilities. However, these models perform forecasting via simultaneously learning two kinds of entangled knowledge in the TKG: (1) general patterns, i.e., invariant temporal structures shared across different scenarios; and (2) scenario information, i.e., factual knowledge engaged in specific scenario, such as entities and relations. As a result, the learning processes of these two kinds of knowledge may interfere with each other, which potentially impact the generalization abilities of the models. To enhance the generalization ability of LLMs on this task, in this paper, we propose a General-to-Specific learning framework (G2S) that disentangles the learning processes of the above two kinds of knowledge. In the general learning stage, we mask the scenario information in different TKGs and convert it into anonymous temporal structures. After training on these structures, the model is able to capture the general patterns across different TKGs. In the specific learning stage, we inject the scenario information into the structures via either in-context learning or fine-tuning modes. Experimental results show that G2S effectively improves the generalization abilities of LLMs.},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2025},
+  year      = {2025}
+}
+
+@inproceedings{acl-2025-1,
+  abbr      = {ACL-2025},
+  title     = {AlignXIE: Boosting Cross-Lingual Universal Information Extraction by Multilingual Alignment},
+  author    = {Zuo, Yuxin and 
+               Jiang, Wenxuan and 
+               Liu, Wenxuan and 
+               Li, Zixuan and 
+               Bai, Long and 
+               Wang, Hanbin and 
+               Zeng, Yutao and  
+               Jin, Xiaolong and 
+               Guo, Jiafeng and 
+               Cheng, Xueqi },
+  abstract  = {Empirical evidence indicates that LLMs exhibit spontaneous cross-lingual alignment. However, although LLMs show promising cross-lingual alignment in IE, a significant imbalance across languages persists, highlighting an underlying deficiency. To address this, we propose AlignXIE, a powerful code LLM with advanced cross-lingual and multilingual capabilities for universal information extraction. Firstly, it standardizes the representation of multilingual schemas using Python classes, ensuring a consistent ontology across different languages. Then, IE across languages is formulated as a unified code generation task. Secondly, we enhance the model’s cross-lingual transferability through IE cross-lingual alignment instruction tuning on a translated instance prediction task we proposed. During this phase, we also construct a high-quality and diverse bilingual IE parallel dataset with 257k samples, called ParallelNER, synthesized by our proposed robust three-stage pipeline, with manual annotation to ensure quality. Although without training in 29 unseen languages, AlignXIE surpasses ChatGPT by 30.17% and SoTA by 20.03%, thereby demonstrating superior cross-lingual IE capabilities. Comprehensive evaluations on 64 IE benchmarks in Chinese and English under various settings demonstrate that AlignXIE significantly enhances cross-lingual IE transfer through boosting the IE alignment.},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2025},
+  year      = {2025}
+}
+
 @misc{arxiv-2025-2,
   abbr         = {arXiv},
   html         = {https://arxiv.org/abs/2503.03201},
