@@ -4,7 +4,7 @@ layout: page
 permalink: /service/
 title: 学术服务
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 <span class="font-weight-bold">学术组织：</span>  

@@ -1,13 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - waltbai
 
 github_repos:
-  - george-gca/multi-language-al-folio
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - waltbai/G2S-TKG-forecasting
+  - waltbai/MCNC
+  - waltbai/RePredictor
+  - waltbai/MCPredictor

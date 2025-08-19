@@ -4,7 +4,7 @@ layout: page
 permalink: /contact/
 title: 联系方式
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 <span class="font-weight-bold">邮箱</span> :  
