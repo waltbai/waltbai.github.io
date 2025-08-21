@@ -3,6 +3,25 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{emnlp-2025,
+  abbr      = {EMNLP-2025},
+  html      = {https://arxiv.org/abs/2503.02628},
+  title     = {Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction},
+  author    = {Liu, Wenxuan and 
+               Li, Zixuan and 
+               Bai, Long and 
+               Zuo, Yuxin and 
+               Xu, Daozhu and  
+               Jin, Xiaolong and 
+               Guo, Jiafeng  and 
+               Cheng, Xueqi },
+  abstract  = {Developing a general-purpose extraction system that can extract events with massive types is a long-standing target in Event Extraction (EE). In doing so, the challenge comes from two aspects: 1) The absence of an efficient and effective annotation method. 2) The absence of a powerful extraction method can handle massive types. For the first challenge, we propose a collaborative annotation method based on Large Language Models (LLMs). Through collaboration among multiple LLMs, it first refines annotations of trigger words from distant supervision and then carries out argument annotation. Next, a voting phase consolidates the annotation preferences across different LLMs. Finally, we create the EEMT dataset, the largest EE dataset to date, featuring over 200,000 samples, 3,465 event types, and 6,297 role types. For the second challenge, we propose an LLM-based Partitioning EE method called LLM-PEE. To overcome the limited context length of LLMs, LLM-PEE first recalls candidate event types and then splits them into multiple partitions for LLMs to extract events. The results in the supervised setting show that LLM-PEE outperforms the state-of-the-art methods by 5.4 in event detection and 6.1 in argument extraction. In the zero-shot setting, LLM-PEE achieves up to 12.9 improvement compared to mainstream LLMs, demonstrating its strong generalization capabilities.},
+  booktitle = {Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+  month     = nov,
+  month     = dec,
+  year      = {2025}
+}
+
 @misc{arxiv-2025-2,
   abbr         = {arXiv},
   html         = {https://arxiv.org/abs/2506.06881},
@@ -81,24 +100,6 @@
   booktitle = {Findings of the Association for Computational Linguistics: ACL 2025},
   month     = jul,
   year      = {2025}
-}
-
-@misc{arxiv-2025-1,
-  abbr         = {arXiv},
-  html         = {https://arxiv.org/abs/2503.02628},
-  title        = {Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction},
-  author       = {Liu, Wenxuan and 
-                  Li, Zixuan and 
-                  Bai, Long and 
-                  Zuo, Yuxin and 
-                  Xu, Daozhu and  
-                  Jin, Xiaolong and 
-                  Guo, Jiafeng  and 
-                  Cheng, Xueqi },
-  abstract     = {Developing a general-purpose extraction system that can extract events with massive types is a long-standing target in Event Extraction (EE). In doing so, the challenge comes from two aspects: 1) The absence of an efficient and effective annotation method. 2) The absence of a powerful extraction method can handle massive types. For the first challenge, we propose a collaborative annotation method based on Large Language Models (LLMs). Through collaboration among multiple LLMs, it first refines annotations of trigger words from distant supervision and then carries out argument annotation. Next, a voting phase consolidates the annotation preferences across different LLMs. Finally, we create the EEMT dataset, the largest EE dataset to date, featuring over 200,000 samples, 3,465 event types, and 6,297 role types. For the second challenge, we propose an LLM-based Partitioning EE method called LLM-PEE. To overcome the limited context length of LLMs, LLM-PEE first recalls candidate event types and then splits them into multiple partitions for LLMs to extract events. The results in the supervised setting show that LLM-PEE outperforms the state-of-the-art methods by 5.4 in event detection and 6.1 in argument extraction. In the zero-shot setting, LLM-PEE achieves up to 12.9 improvement compared to mainstream LLMs, demonstrating its strong generalization capabilities.},
-  howpublished = {arXiv preprint},
-  month        = mar,
-  year         = {2025}
 }
 
 @inproceedings{coling-2025,
