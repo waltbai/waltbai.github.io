@@ -20,7 +20,7 @@ nav_order: 5
 
 **Area Chair of ACL Rolling Review (ARR):**  
 2024: Dec  
-2025: Feb
+2025: Feb, May
 
 **Reviewer of ACL Rolling Review (ARR):**  
 2021: Nov  

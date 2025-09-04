@@ -20,7 +20,7 @@ nav_order: 5
 
 <span class="font-weight-bold">ACL Rolling Review (ARR)领域主席：</span>  
 2024: Dec  
-2025: Feb
+2025: Feb, May
 
 <span class="font-weight-bold">ACL Rolling Review (ARR)审稿：</span>  
 2021: Nov  
