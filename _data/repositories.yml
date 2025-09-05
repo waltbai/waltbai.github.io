@@ -1,8 +1,6 @@
 github_users:
   - waltbai
 
-repo_description_lines_max: 2
-
 github_repos:
   - waltbai/WebThinker
   - waltbai/G2S-TKG-forecasting
