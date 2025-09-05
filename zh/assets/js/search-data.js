@@ -84,32 +84,7 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "",handler: () => {
-              window.location.href = "/zh/books/en-us/the_godfather/";
-            },},{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "",handler: () => {
-              window.location.href = "/zh/books/pt-br/the_godfather/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "",handler: () => {
-              window.location.href = "/zh/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "",handler: () => {
-              window.location.href = "/zh/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "",handler: () => {
-              window.location.href = "/zh/projects/9_project/";
-            },},{id: "projects-openspg-语义增强可编程图谱框架",
+      },{id: "projects-openspg-语义增强可编程图谱框架",
           title: 'OpenSPG·语义增强可编程图谱框架',
           description: "OpenSPG是以SPG框架为基础设计和实现的知识图谱开放引擎，它为领域图谱构建提供了明确的语义表示、逻辑规则定义、算子框架（构建、推理）等能力，支持各厂商可插拔的适配基础引擎、算法服务，构建自定义的解决方案。",
           section: "",handler: () => {
