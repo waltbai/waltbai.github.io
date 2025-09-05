@@ -87,7 +87,10 @@
                       {% if child.title == 'divider' %}
                         <div class="dropdown-divider"></div>
                       {% else %}
-                        <a class="dropdown-item {% if page.title == child.title %}active{% endif %}" href="{{ child.permalink | relative_url }}">
+                        <a
+                          class="dropdown-item {% if page.title == child.title %}active{% endif %}"
+                          href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
+                        >
                           {{- child.title -}}
                         </a>
                       {% endif %}
@@ -95,8 +98,15 @@
                   </div>
                 </li>
               {% else %}
-                <li class="nav-item {% if page.url contains p.permalink %}active{% endif %}">
-                  {% if p.permalink contains '/blog/' %}{% assign url = '/blog/' %} {% else %}{% assign url = p.url %}{% endif %}
+                {% assign parent_link = p.permalink | remove: 'index.html' %}
+                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
+                  {%- if p.permalink contains '://' -%}
+                    {%- assign url = p.permalink -%}
+                  {%- elsif p.permalink contains '/blog/' -%}
+                    {%- assign url = '/blog/' -%}
+                  {%- else -%}
+                    {%- assign url = p.url -%}
+                  {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
                     {{- p.title }}
                     {% if page.url contains p.url %}
@@ -107,6 +117,14 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          {% if site.search_enabled %}
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          {% endif %}
           <!-- Toogle language -->
           {% if site.languages.size >= 2 %}
             {% if site.languages.size == 2 %}
@@ -117,7 +135,7 @@
               {% endif %}
               <li class="nav-item active">
                 {% if site.active_lang == site.default_lang %}
-                  <a class="nav-link" {% static_href -%} href="{{site.baseurl}}/{{ other_language }}{{page.url}}" {%- endstatic_href %}>
+                  <a class="nav-link" {% static_href -%} href="{{ site.baseurl }}/{{ other_language }}{{ page.url }}" {%- endstatic_href %}>
                     {% if site.country_flag %}
                       <span class="fi fi-{{ other_language | split: "-" | last }}"></span>
                     {% else %}
@@ -125,7 +143,7 @@
                     {%- endif -%}
                   </a>
                 {% else %}
-                  <a class="nav-link" {% static_href -%} href="{{site.baseurl}}{{ page.url }}" {%- endstatic_href %}>
+                  <a class="nav-link" {% static_href -%} href="{{ site.baseurl }}{{ page.url }}" {%- endstatic_href %}>
                     {% if site.country_flag %}
                       <span class="fi fi-{{ site.default_lang | split: "-" | last }}"></span>
                     {% else %}
@@ -162,7 +180,7 @@
                         <div class="dropdown-divider"></div>
                       {% endif %}
                       {% if l == site.default_lang %}
-                        <a class="dropdown-item" {% static_href -%} href="{{site.baseurl}}{{page.url}}" {%- endstatic_href %}>
+                        <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}{{ page.url }}" {%- endstatic_href %}>
                           {% if site.country_flag %}
                             <span class="fi fi-{{ l | split: "-" | last }}"></span>
                           {% else %}
@@ -170,7 +188,7 @@
                           {%- endif -%}
                         </a>
                       {% else %}
-                        <a class="dropdown-item" {% static_href -%} href="{{site.baseurl}}/{{l}}{{page.url}}" {%- endstatic_href %}>
+                        <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}/{{ l }}{{ page.url }}" {%- endstatic_href %}>
                           {% if site.country_flag %}
                             <span class="fi fi-{{ l | split: "-" | last }}"></span>
                           {% else %}

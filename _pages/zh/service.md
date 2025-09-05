@@ -16,7 +16,7 @@ nav_order: 5
 <span class="font-weight-bold">会议审稿：</span>  
 2023: AAAI, ACL, EMNLP  
 2024: AAAI, CCKS, NLPCC, EMNLP Industry Track, EMNLP Demo  
-2025: AAAI, NAACL Industry Track, ACL Industry Track, ACL Demo
+2025: AAAI, NAACL Industry Track, ACL Industry Track, ACL Demo, NLPCC, CCKS
 
 <span class="font-weight-bold">ACL Rolling Review (ARR)领域主席：</span>  
 2024: Dec  

@@ -10,16 +10,19 @@
 
 [![deploy](https://github.com/george-gca/multi-language-al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/george-gca/multi-language-al-folio/actions/workflows/deploy.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fd22b3da-3970-4612-8dee-5579601589a3/deploy-status)](https://app.netlify.com/sites/multi-language-al-folio/deploys)
-[![Maintainers](https://img.shields.io/badge/maintainers-4-success.svg)](#maintainers)
-[![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/alshedivat/al-folio/graphs/contributors/)
+[![Maintainers](https://img.shields.io/badge/maintainers-1-success.svg)](#maintainers)
+[![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/george-gca/multi-language-al-folio/graphs/contributors/)
+
 [![Docker Image Version](https://img.shields.io/docker/v/georgegca/multi-language-al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/georgegca/multi-language-al-folio)
 [![Docker Image Size](https://img.shields.io/docker/image-size/georgegca/multi-language-al-folio?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/georgegca/multi-language-al-folio)
 [![Docker Pulls](https://img.shields.io/docker/pulls/georgegca/multi-language-al-folio?color=blueviolet)](https://hub.docker.com/r/georgegca/multi-language-al-folio)
 
-[![GitHub release](https://img.shields.io/github/v/release/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/george-gca/multi-language-al-folio?color=blue)](https://github.com/george-gca/multi-language-al-folio/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/alshedivat/al-folio)](https://github.com/alshedivat/al-folio)
-[![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
+[![GitHub release](https://img.shields.io/github/v/release/george-gca/multi-language-al-folio)](https://github.com/george-gca/multi-language-al-folio/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/george-gca/multi-language-al-folio?color=blue)](https://github.com/george-gca/multi-language-al-folio/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/george-gca/multi-language-al-folio)](https://github.com/george-gca/multi-language-al-folio)
+[![GitHub forks](https://img.shields.io/github/forks/george-gca/multi-language-al-folio)](https://github.com/george-gca/multi-language-al-folio/fork)
+
+[![pt-br](https://img.shields.io/badge/leia--me-pt--br-green.svg)](README.pt-br.md)
 
 </div>
 
@@ -88,7 +91,6 @@ Feel free to add your own page(s) by sending a PR.
 <a href="https://daviddmc.github.io/" target="_blank">★</a>
 <a href="https://andreaskuster.ch/" target="_blank">★</a>
 <a href="https://ellisbrown.github.io/" target="_blank">★</a>
-<a href="https://noman-bashir.github.io/" target="_blank">★</a>
 <a href="https://djherron.github.io/" target="_blank">★</a>
 <a href="https://rodosingh.github.io/" target="_blank">★</a>
 <a href="https://vdivakar.github.io/" target="_blank">★</a>
@@ -139,6 +141,30 @@ Feel free to add your own page(s) by sending a PR.
 <a href="https://chrischoi314.github.io" target="_blank">★</a>
 <a href="https://riccobelli.faculty.polimi.it" target="_blank">★</a>
 <a href="https://kishanved.tech/" target="_blank">★</a>
+<a href="https://abhilesh.github.io/" target="_blank">★</a>
+<a href="https://jackjburnett.github.io/" target="_blank">★</a>
+<a href="https://physics-morris.github.io/" target="_blank">★</a>
+<a href="https://sraf.ir" target="_blank">★</a>
+<a href="https://acad.garywei.dev/" target="_blank">★</a>
+<a href="https://tonideleo.github.io/" target="_blank">★</a>
+<a href="https://alonkellner.com/" target="_blank">★</a>
+<a href="https://berylbir.github.io/" target="_blank">★</a>
+<a href="https://thefermi0n.github.io/" target="_blank">★</a>
+<a href="https://mingsun-kaust.github.io/" target="_blank">★</a>
+<a href="https://hdocmsu.github.io/" target="_blank">★</a>
+<a href="https://trandangtrungduc.github.io/" target="_blank">★</a>
+<a href="https://kinghowler.github.io/" target="_blank">★</a>
+<a href="https://anurye.github.io/" target="_blank">★</a>
+<a href="https://charlie-xiao.github.io/" target="_blank">★</a>
+<a href="https://giuseppeperelli.github.io/" target="_blank">★</a>
+<a href="https://shlee-lab.github.io/" target="_blank">★</a>
+<a href="https://devos50.github.io/" target="_blank">★</a>
+<a href="https://kocikowski.com/" target="_blank">★</a>
+<a href="https://vmooers.github.io/" target="_blank">★</a>
+<a href="https://jpfonseca.github.io/" target="_blank">★</a>
+<a href="https://dmitryryumin.github.io/" target="_blank">★</a>
+<a href="https://alexiglad.github.io/" target="_blank">★</a>
+<a href="https://nishanthjkumar.com/" target="_blank">★</a>
 </td>
 </tr>
 <tr>
@@ -151,6 +177,8 @@ Feel free to add your own page(s) by sending a PR.
 <a href="https://programming-group.com/" target="_blank">★</a>
 <a href="https://sailing-lab.github.io/" target="_blank">★</a>
 <a href="https://inbt.jhu.edu/epidiagnostics/" target="_blank">★</a>
+<a href="https://www.nuesl.org/" target="_blank">★</a>
+<a href="https://big-culture.github.io/" target="_blank">★</a>
 </td>
 </tr>
 <tr>
@@ -176,7 +204,8 @@ Score Based Methods (NeurIPS: <a href="https://score-based-methods-workshop.gith
 Images2Symbols (CogSci: <a href="https://images2symbols.github.io/" target="_blank"> 2022</a>) <br>
 Medical Robotics Junior Faculty Forum (ISMR: <a href="https://junior-forum-ismr.github.io/" target="_blank"> 2023</a>)<br>
 Beyond Vision: Physics meets AI (ICIAP: <a href="https://physicsmeetsai.github.io/beyond-vision/" target="_blank">2023</a>) <br>
-Workshop on Diffusion Models (NeurIPS: <a href="https://diffusionworkshop.github.io/" target="_blank">2023</a>)
+Workshop on Diffusion Models (NeurIPS: <a href="https://diffusionworkshop.github.io/" target="_blank">2023</a>) <br>
+Workshop on Structured Probabilistic Inference & Generative Modeling (ICML: <a href="https://spigmworkshop.github.io/" target="_blank">2023</a>, <a href="https://spigmworkshop2024.github.io/" target="_blank">2024</a>)
 </td>
 </tr>
 </table>
@@ -296,7 +325,7 @@ You can create a people page if you want to feature more than one person. Each p
 
 ### Publications
 
-Your publications' page is generated automatically from your BibTex bibliography. Simply edit [\_bibliography/papers.bib](_bibliography/papers.bib). You can also add new `*.bib` files and customize the look of your publications however you like by editing [\_pages/publications.md](_pages/publications.md). By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
+Your publications' page is generated automatically from your BibTex bibliography. Simply edit [\_bibliography/papers.bib](_bibliography/papers.bib). You can also add new `*.bib` files and customize the look of your publications however you like by editing [\_pages/LANG/publications.md](_pages/en-us/publications.md). By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
 
 You can add extra information to a publication, like a PDF file in the [assets/pdf/](assets/pdf/) directory and add the path to the PDF file in the BibTeX entry with the `pdf` field. Some of the supported fields are: `abstract`, `altmetric`, `arxiv`, `bibtex_show`, `blog`, `code`, `dimensions`, `doi`, `eprint`, `html`, `isbn`, `pdf`, `pmid`, `poster`, `slides`, `supp`, `video`, and `website`.
 
@@ -322,9 +351,9 @@ You can easily create your own collections, apps, short stories, courses, or wha
 
 The theme allows you to create blog posts in the [distill.pub](https://distill.pub/) style:
 
-[![Distill Preview](readme_preview/distill.png)](https://george-gca.github.io/multi-language-al-folio/blog/2021/distill/)
+[![Distill Preview](readme_preview/distill.png)](https://george-gca.github.io/multi-language-al-folio/blog/2018/distill/)
 
-For more details on how to create distill-styled posts using `<d-*>` tags, please refer to [the example](https://george-gca.github.io/multi-language-al-folio/blog/2021/distill/).
+For more details on how to create distill-styled posts using `<d-*>` tags, please refer to [the example](https://george-gca.github.io/multi-language-al-folio/blog/2018/distill/).
 
 #### Full support for math & code
 
@@ -430,7 +459,7 @@ For frequently asked questions, please refer to [FAQ.md](FAQ.md).
 
 Contributions to multi-language-al-folio are very welcome! Before you get started, please take a look at [the guidelines](CONTRIBUTING.md).
 
-If you would like to improve documentation or fix a minor inconsistency or bug, please feel free to send a PR directly to `master`. For more complex issues/bugs or feature requests, please open an issue using the appropriate template.
+If you would like to improve documentation or fix a minor inconsistency or bug, please feel free to send a PR directly to `main`. For more complex issues/bugs or feature requests, please open an issue using the appropriate template.
 
 ### Maintainers
 
@@ -458,7 +487,7 @@ Our most active contributors are welcome to join the maintainers team. If you ar
 ### All Contributors
 
 <a href="https://contrib.rocks">
-  <img src="https://contrib.rocks/image?repo=alshedivat/al-folio" />
+  <img src="https://contrib.rocks/image?repo=alshedivat/al-folio&max=500&columns=24" />
 </a>
 
 ## Star History
@@ -473,6 +502,6 @@ Our most active contributors are welcome to join the maintainers team. If you ar
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://github.com/george-gca/multi-language-al-folio/blob/master/LICENSE).
+The theme is available as open source under the terms of the [MIT License](https://github.com/george-gca/multi-language-al-folio/blob/main/LICENSE).
 
 Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license). Since then, it got a full re-write of the styles and many additional cool features.
