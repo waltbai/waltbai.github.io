@@ -5,7 +5,7 @@
 
 @inproceedings{emnlp-2025,
   abbr      = {EMNLP-2025},
-  html      = {https://arxiv.org/abs/2503.02628},
+  html      = {https://aclanthology.org/2025.emnlp-main.1743/},
   title     = {Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction},
   author    = {Liu, Wenxuan and 
                Li, Zixuan and 
@@ -18,7 +18,6 @@
   abstract  = {Developing a general-purpose extraction system that can extract events with massive types is a long-standing target in Event Extraction (EE). In doing so, the challenge comes from two aspects: 1) The absence of an efficient and effective annotation method. 2) The absence of a powerful extraction method can handle massive types. For the first challenge, we propose a collaborative annotation method based on Large Language Models (LLMs). Through collaboration among multiple LLMs, it first refines annotations of trigger words from distant supervision and then carries out argument annotation. Next, a voting phase consolidates the annotation preferences across different LLMs. Finally, we create the EEMT dataset, the largest EE dataset to date, featuring over 200,000 samples, 3,465 event types, and 6,297 role types. For the second challenge, we propose an LLM-based Partitioning EE method called LLM-PEE. To overcome the limited context length of LLMs, LLM-PEE first recalls candidate event types and then splits them into multiple partitions for LLMs to extract events. The results in the supervised setting show that LLM-PEE outperforms the state-of-the-art methods by 5.4 in event detection and 6.1 in argument extraction. In the zero-shot setting, LLM-PEE achieves up to 12.9 improvement compared to mainstream LLMs, demonstrating its strong generalization capabilities.},
   booktitle = {Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
   month     = nov,
-  month     = dec,
   year      = {2025}
 }
 
@@ -134,20 +133,13 @@
   year         = {2024}
 }
 
-@misc{arxiv-2023-1,
-  abbr         = {arXiv},
+@article{jcip-2024-2,
+  abbr     = {JCIP-2024},
   html         = {https://arxiv.org/abs/2309.12892},
-  title        = {ProtoEM: A Prototype-Enhanced Matching Framework for Event Relation Extraction},
-  author       = {Hu, Zhilei and
-                  Li, Zixuan and 
-                  Xu, Daozhu and 
-                  Bai, Long and 
-                  Jin, Cheng and 
-                  Jin, Xiaolong and 
-                  Guo, Jiafeng and 
-                  Cheng, Xueqi },
-  abstract     = {Event Relation Extraction (ERE) aims to extract multiple kinds of relations among events in texts. However, existing methods singly categorize event relations as different classes, which are inadequately capturing the intrinsic semantics of these relations. To comprehensively understand their intrinsic semantics, in this paper, we obtain prototype representations for each type of event relation and propose a Prototype-Enhanced Matching (ProtoEM) framework for the joint extraction of multiple kinds of event relations. Specifically, ProtoEM extracts event relations in a two-step manner, i.e., prototype representing and prototype matching. In the first step, to capture the connotations of different event relations, ProtoEM utilizes examples to represent the prototypes corresponding to these relations. Subsequently, to capture the interdependence among event relations, it constructs a dependency graph for the prototypes corresponding to these relations and utilized a Graph Neural Network (GNN)-based module for modeling. In the second step, it obtains the representations of new event pairs and calculates their similarity with those prototypes obtained in the first step to evaluate which types of event relations they belong to. Experimental results on the MAVEN-ERE dataset demonstrate that the proposed ProtoEM framework can effectively represent the prototypes of event relations and further obtain a significant improvement over baseline models.},
-  howpublished = {arXiv preprint},
+  title        = {基于原型学习的事件关系抽取框架},
+  author       = {胡志磊 and 李紫宣 and 靳小龙 and 白龙 and 郭嘉丰 and 程学旗 },
+  abstract     = {事件关系抽取（Event Relation Extraction, ERE）旨在识别文本中不同事件之间的多种关系。现有方法只是使用事件对信息来判断事件关系的类别，而忽视了事件关系的内在语义信息。为了全面地理解事件关系并更好地进行事件关系抽取，本文提出了一种基于原型学习的事件关系抽取框架，即ProtoERE。该框架不仅学习每种事件关系类型所对应的原型表示，还对不同事件关系类型之间的相互依赖性进行建模。具体来说，ProtoERE首先利用每种事件关系类型的典型样例来获得其各自的原型表示。随后，该框架构建了一个基于原型的依赖图，并通过图神经网络对这些原型之间的相互依赖性进行了建模，从而进一步提升原型表示的准确性。当需要判断新的事件对的关系时，ProtoERE将计算它们的表示与这些原型表示的相似性，最终评估其属于哪一种事件关系类型。在常用的三个数据集上的实验结果表明，ProtoERE相较于基线模型取得了显著的性能提升。},
+  journal  = {中文信息学报},
   month        = sep,
   year         = {2023}
 }
@@ -170,7 +162,7 @@
 
 @inproceedings{nlpcc-2024,
   abbr      = {NLPCC-2024},
-  html      = {https://arxiv.org/abs/2311.02962},
+  html      = {https://link.springer.com/chapter/10.1007/978-981-97-9434-8_3},
   title     = {Retrieval-Augmented Code Generation for Universal Information Extraction},
   author    = {Guo, Yucan and 
                Li, Zixuan and 
