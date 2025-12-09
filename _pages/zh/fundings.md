@@ -1,7 +1,7 @@
 ---
-page_id: projects
+page_id: fundings
 layout: page
-permalink: /projects/
+permalink: /fundings/
 title: 科研项目
 
 nav: true

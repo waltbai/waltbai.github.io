@@ -17,9 +17,14 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Long Bai is a research assistant at [Key Laboratory of Network Data Science and Technology](http://bigdatalab.ac.cn/),  [Institute of Computing Technology](http://www.ict.ac.cn/), Chinese Academy of Sciences (ICTCAS). 
+Long Bai is a research assistant at [Key Laboratory of Network Data Science and Technology](http://bigdatalab.ac.cn/),  [Institute of Computing Technology](http://www.ict.ac.cn/), Chinese Academy of Sciences (ICTCAS).
 He has been currently visiting NExT++ Centre, National University of Singapore from Dec. 2023, supervised by [Prof. Tat-seng Chua](https://www.chuatatseng.com/).
-His research interests lie in Knowledge Graph (KG) and Natural Language Processing (NLP). 
-He is currently focusing on event-centric analysis, including event knowledge acquisition, event prediction, etc.
 
 Before that, he obtained Ph.D degree from University of Chinese Academy of Sciences (UCAS) in 2023, supervised by [Prof. Xueqi Cheng](https://bigdatalab.ac.cn/yjdw/jcrc/202203/t20220308_20663.html), and obtained bachelor's degree from [Zhejiang University](https://www.zju.edu.cn/) in 2016.
+
+His general research interest lies in the intersection of knowledge computing and natural language processing.
+Now, he focuses on knowledge-enhanced deep research, including:
+knowledge organization for long multimodal knowledge sources;
+knowledge computing for multimodal content generation;
+knowledge-guided planning for complex analysis tasks;
+and evaluation of deep research agents especially for knowledge-related abilities.

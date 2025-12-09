@@ -1,8 +1,8 @@
 ---
-page_id: projects
+page_id: fundings
 layout: page
-permalink: /projects/
-title: Projects
+permalink: /fundings/
+title: Fundings
 
 nav: true
 nav_order: 3
