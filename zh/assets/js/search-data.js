@@ -32,7 +32,7 @@ ninja.data = [{
           description: "",
           section: "",
           handler: () => {
-            window.location.href = "/zh/projects/";
+            window.location.href = "/zh/fundings/";
           },
         },{id: "nav-代码",
           title: "代码",
