@@ -39,7 +39,7 @@ ninja.data = [{
           description: "",
           section: "",
           handler: () => {
-            window.location.href = "/zh/software/";
+            window.location.href = "/zh/repository/";
           },
         },{id: "nav-学术服务",
           title: "学术服务",
