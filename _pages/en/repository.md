@@ -1,8 +1,8 @@
 ---
-page_id: software
+page_id: repository
 layout: page
-permalink: /software/
-title: 代码
+permalink: /repository/
+title: Repository
 
 nav: true
 nav_order: 4
