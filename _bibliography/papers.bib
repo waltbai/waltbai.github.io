@@ -3,6 +3,44 @@
 
 @string{aps = {American Physical Society,}}
 
+@misc{arxiv-2026-2,
+  abbr         = {arXiv},
+  html         = {https://arxiv.org/abs/2601.07468},
+  title        = {Beyond Dialogue Time: Temporal Semantic Memory for Personalized LLM Agents},
+  author       = {Su, Miao and
+                  Guo, Yucan and 
+                  Hou, Zhongni and 
+                  Bai, Long and 
+                  Li, Zixuan and 
+                  Zhang, Yufei and 
+                  Yin, Guojun and 
+                  Lin, Wei and 
+                  Jin, Xiaolong and 
+                  Guo, Jiafeng and 
+                  Cheng, Xueqi },
+  abstract     = {Memory enables Large Language Model (LLM) agents to perceive, store, and use information from past dialogues, which is essential for personalization. However, existing methods fail to properly model the temporal dimension of memory in two aspects: 1) Temporal inaccuracy: memories are organized by dialogue time rather than their actual occurrence time; 2) Temporal fragmentation: existing methods focus on point-wise memory, losing durative information that captures persistent states and evolving patterns. To address these limitations, we propose Temporal Semantic Memory (TSM), a memory framework that models semantic time for point-wise memory and supports the construction and utilization of durative memory. During memory construction, it first builds a semantic timeline rather than a dialogue one. Then, it consolidates temporally continuous and semantically related information into a durative memory. During memory utilization, it incorporates the query's temporal intent on the semantic timeline, enabling the retrieval of temporally appropriate durative memories and providing time-valid, duration-consistent context to support response generation. Experiments on LongMemEval and LoCoMo show that TSM consistently outperforms existing methods and achieves up to 12.2% absolute improvement in accuracy, demonstrating the effectiveness of the proposed method.},
+  howpublished = {arXiv preprint},
+  month        = jan,
+  year         = {2026}
+}
+
+@misc{arxiv-2026-1,
+  abbr         = {arXiv},
+  html         = {https://arxiv.org/abs/2601.03190},
+  title        = {Maximizing Local Entropy Where It Matters: Prefix-Aware Localized LLM Unlearning},
+  author       = {Zhai, Naixin and 
+                  Shao, Pengyang and
+                  Zheng, Binbin and 
+                  Yang, Yonghui and 
+                  Shen, Fei and 
+                  Bai, Long and 
+                  Yang, Xun },
+  abstract     = {Machine unlearning aims to forget sensitive knowledge from Large Language Models (LLMs) while maintaining general utility. However, existing approaches typically treat all tokens in a response indiscriminately and enforce uncertainty over the entire vocabulary. This global treatment results in unnecessary utility degradation and extends optimization to content-agnostic regions. To address these limitations, we propose PALU (Prefix-Aware Localized Unlearning), a framework driven by a local entropy maximization objective across both temporal and vocabulary dimensions. PALU reveals that (i) suppressing the sensitive prefix alone is sufficient to sever the causal generation link, and (ii) flattening only the top- logits is adequate to maximize uncertainty in the critical subspace. These findings allow PALU to avoid redundant optimization across the full vocabulary and parameter space while minimizing collateral damage to general model performance. Extensive experiments validate that PALU achieves superior forgetting efficacy and utility preservation compared to state-of-the-art baselines.},
+  howpublished = {arXiv preprint},
+  month        = jan,
+  year         = {2026}
+}
+
 @inproceedings{wsdm-2026,
   abbr      = {WSDM-2026},
   title     = {Identify-Conceptualize-Align: A Schema-Adaptive Framework for Unified Entity Recognition and Event Detection},
