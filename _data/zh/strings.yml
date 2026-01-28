@@ -43,7 +43,7 @@ cv:
   position: 职位
   postalCode: Postal Code
   profiles: Profiles
-  projects: Projects
+  # projects: Projects
   publications: Publications
   publisher: Publisher
   reference: Reference
