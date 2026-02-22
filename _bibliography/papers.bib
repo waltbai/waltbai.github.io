@@ -43,6 +43,7 @@
 
 @inproceedings{wsdm-2026,
   abbr      = {WSDM-2026},
+  html      = {https://dl.acm.org/doi/10.1145/3773966.3777998},
   title     = {Identify-Conceptualize-Align: A Schema-Adaptive Framework for Unified Entity Recognition and Event Detection},
   author    = {Ren, Weicheng and 
                Li, Zixuan and 
@@ -51,6 +52,7 @@
                Guo, Jiafeng  and 
                Cheng, Xueqi },
   booktitle = {Proceedings of the Nineteenth ACM International Conference on Web Search and Data Mining},
+  abstract  = {Large Language Models (LLMs) have demonstrated strong adaptation to unseen tasks. However, their performance in Information Extraction (IE) under unseen schemas remains limited. Actually, IE requires both general abilities for understanding natural language and semantic concepts, and specialized abilities for aligning extracted information to various human-defined schemas. Training an LLM jointly on multiple schemas, or adapting it to a specific schema, often results in performance drops on datasets with other schemas, especially when conflicts arise between schemas. We refer to this phenomenon as the schema alignment tax in this paper. To alleviate this, we propose a schema-adaptive three-phase framework, Identify–Conceptualize–Align (ICA), which enables LLMs to focus on general abilities such as identifying entity and trigger spans and assigning corresponding concepts to them, while delegating schema-specific alignment to lightweight models. Specifically, in the Identification phase, we train an LLM to identify entity and trigger spans on multiple datasets, with cross-dataset annotation to boost span recall. In the Conceptualization phase, the LLM is used to assign semantic concepts to each span. In the Alignment phase, we train different lightweight alignment models to map these concepts to different human-defined schemas. The first two phases are fully reusable across tasks, so adapting to a new schema requires retraining only the alignment model. We evaluate ICA on entity recognition and event detection on 26 commonly adopted datasets with diverse schemas. Experimental results show that our method not only surpasses state-of-the-art approaches under supervised settings, achieving an average F1 improvement of 1.6%, but also attains a remarkable 11.5% average F1 gain on NER and ED in the 10-shot setting.},
   month     = feb,
   year      = {2026},
 }
