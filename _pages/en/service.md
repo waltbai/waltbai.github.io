@@ -11,14 +11,14 @@ nav_order: 5
 2024-present: Member of OpenKG-SIGSPG
 
 **Conference Area Chair:**  
-2024: EMNLP Demo  
-2025: EMNLP Demo
+2024: EMNLP  
+2025: EMNLP
 
 **Conference Program Committee member (Reviewer):**  
 2023: AAAI, ACL, EMNLP  
-2024: AAAI, CCKS, NLPCC, EMNLP Industry Track, EMNLP Demo  
-2025: AAAI, NAACL Industry Track, ACL Industry Track, ACL Demo, NLPCC, CCKS, EMNLP Industry Track  
-2026: AAAI
+2024: AAAI, CCKS, NLPCC, EMNLP  
+2025: AAAI, NAACL, ACL, NLPCC, CCKS, EMNLP  
+2026: AAAI, EACL
 
 **Area Chair of ACL Rolling Review (ARR):**  
 2024: Dec  
@@ -29,4 +29,4 @@ nav_order: 5
 2022: Jan, Feb, Apr  
 2023: Feb, Oct, Dec  
 2024: Feb, Apr, Jun, Aug, Oct  
-2025: Feb, Jul
+2025: Feb, Jul, Oct
