@@ -7,9 +7,6 @@ nav: true
 nav_order: 5
 ---
 
-**Organizations:**  
-2024-present: Member of OpenKG-SIGSPG
-
 **Conference Area Chair:**  
 2024: EMNLP  
 2025: EMNLP
@@ -20,9 +17,13 @@ nav_order: 5
 2025: AAAI, NAACL, ACL, NLPCC, CCKS, EMNLP  
 2026: AAAI, EACL
 
+**Journal Reviewer:**  
+2026-present: The Knowledge Engineering Review (KER)
+
 **Area Chair of ACL Rolling Review (ARR):**  
 2024: Dec  
-2025: Feb, May
+2025: Feb, May  
+2026: Jan
 
 **Reviewer of ACL Rolling Review (ARR):**  
 2021: Nov  
@@ -30,3 +31,6 @@ nav_order: 5
 2023: Feb, Oct, Dec  
 2024: Feb, Apr, Jun, Aug, Oct  
 2025: Feb, Jul, Oct
+
+**Organizations:**  
+2024-present: Member of OpenKG-SIGSPG
