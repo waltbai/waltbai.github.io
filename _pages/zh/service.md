@@ -4,7 +4,7 @@ layout: page
 permalink: /service/
 title: 学术服务
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 <span class="font-weight-bold">会议领域主席：</span>  

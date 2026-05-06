@@ -4,7 +4,7 @@ layout: talks
 permalink: /talks/
 collection: talks
 
-title: Talks
+title: 学术报告
 description: 
 
 nav: true

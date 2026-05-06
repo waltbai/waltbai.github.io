@@ -3,35 +3,47 @@ layout: page
 ---
 {{ content }}
 
-{% if page.collection and page.collection.size > 0 %}
-    {% assign collection = site[page.collection] | sort: "date" %}
-    {% if collection and collection.size > 0 %}
+<div class="publications">
+  <ol class="bibliography">
+    {% if page.collection and page.collection.size > 0 %}
+      {% assign collection = site[page.collection] | sort: "date" %}
+      {% if collection and collection.size > 0 %}
         {% for item in collection reversed %}
+          <li>
             <div class="row">
-                <!-- Date -->
-                <div class="col col-sm-2 abbr">
-                    {% assign date = item.date split: '-' | slice: 0, 2 | join: '.' | default: '' %}
-                    <abbr class="badge">{{ date }}</abbr>
+              <!-- Date -->
+              <div class="col col-sm-2 abbr">
+                {% assign date = item.date | split: '-' | slice: 0, 2 | join: '.' | default: '' %}
+                <abbr class="badge rounded w-100">{{ date }}</abbr>
+              </div>
+              <div class="col-sm-10">
+                <!-- Title -->
+                <div class="title font-weight-bold ml-1 ml-md-4">
+                  {{ item.title }}
                 </div>
-                <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-                    <!-- Title -->
-                    <div class="title">{{ item.title }}</div>
-                    <!-- Venue -->
-                   <em>
-                        {% if item.website %}
-                            <a href="{{ item.website }}">{{ item.venue }}</a>
-                        {% else %}
-                            {{ item.venue }}
-                        {% endif %}
-                    </em>
-                    <!-- Slides -->
-                    <div class="links">
-                        {% if item.slides %}
-                            <a href="{{ item.slides | prepend: '/assets/pdf/slides/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
-                        {% endif %}
-                    </div>
+                <!-- Venue -->
+                <em>
+                  {% if item.website %}
+                    <a href="{{ item.website }}">{{ item.venue }}</a>
+                  {% else %}
+                    {{ item.venue }}
+                  {% endif %}
+                </em>
+                <!-- Slides -->
+                <div class="links">
+                  {% if item.slides %}
+                    <a 
+                    href="{{ item.slides | prepend: '/assets/pdf/slides/' | relative_url }}"
+                    class="btn btn-sm z-depth-0"
+                    role="button"
+                    >Slides</a>
+                  {% endif %}
                 </div>
+              </div>
             </div>
+          </li>
         {% endfor %}
+      {% endif %}
     {% endif %}
-{% endif %}
+  </ol>
+</div>
