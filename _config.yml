@@ -156,6 +156,8 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  talks:
+    output: true
 
 announcements:
   enabled: false
