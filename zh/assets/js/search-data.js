@@ -41,19 +41,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/zh/repository/";
           },
+        },{id: "nav-学术报告",
+          title: "学术报告",
+          description: "",
+          section: "",
+          handler: () => {
+            window.location.href = "/zh/talks/";
+          },
         },{id: "nav-学术服务",
           title: "学术服务",
           description: "",
           section: "",
           handler: () => {
             window.location.href = "/zh/service/";
-          },
-        },{id: "nav-invited-talks",
-          title: "Invited Talks",
-          description: "",
-          section: "",
-          handler: () => {
-            window.location.href = "/zh/talks/";
           },
         },{id: "nav-简历",
           title: "简历",
