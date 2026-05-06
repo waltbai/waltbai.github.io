@@ -22,15 +22,17 @@ layout: page
                   {{ item.title }}
                 </div>
                 <!-- Venue -->
-                <em>
-                  {% if item.website %}
-                    <a href="{{ item.website }}">{{ item.venue }}</a>
-                  {% else %}
-                    {{ item.venue }}
-                  {% endif %}
-                </em>
+                <div class="periodical ml-1 ml-md-4">
+                  <em>
+                    {% if item.website %}
+                      <a href="{{ item.website }}">{{ item.venue }}</a>
+                    {% else %}
+                      {{ item.venue }}
+                    {% endif %}
+                  </em>
+                </div>
                 <!-- Slides -->
-                <div class="links">
+                <div class="links ml-1 ml-md-4">
                   {% if item.slides %}
                     <a 
                     href="{{ item.slides | prepend: '/assets/pdf/slides/' | relative_url }}"
