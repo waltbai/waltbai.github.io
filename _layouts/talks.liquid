@@ -9,29 +9,23 @@ layout: page
         {% for item in collection reversed %}
             <div class="row">
                 <!-- Date -->
-                <div class="col-xs-2 cl-sm-2 col-md-2 text-center abbr">
-                    {% if item.date %}
-                        {% assign date = item.date %}
-                    {% else %}
-                        {% assign date = '' %}
-                    {% endif %}
+                <div class="col col-sm-2 abbr">
+                    {% assign date = item.date split: '-' | slice: 0, 2 | join: '.' | default: '' %}
                     <abbr class="badge">{{ date }}</abbr>
                 </div>
                 <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
                     <!-- Title -->
-                    <div class="title font-weight-bold ml-1 ml-md-4">
-                        {{ item.title }}
-                    </div>
+                    <div class="title">{{ item.title }}</div>
                     <!-- Venue -->
-                    <div class="periodical ml-1 ml-md-4">
+                   <em>
                         {% if item.website %}
                             <a href="{{ item.website }}">{{ item.venue }}</a>
                         {% else %}
                             {{ item.venue }}
                         {% endif %}
-                    </div>
+                    </em>
                     <!-- Slides -->
-                    <div class="links ml-1 ml-md-4">
+                    <div class="links">
                         {% if item.slides %}
                             <a href="{{ item.slides | prepend: '/assets/pdf/slides/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
                         {% endif %}
