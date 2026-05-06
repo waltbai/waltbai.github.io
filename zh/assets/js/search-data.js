@@ -48,6 +48,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/zh/service/";
           },
+        },{id: "nav-invited-talks",
+          title: "Invited Talks",
+          description: "",
+          section: "",
+          handler: () => {
+            window.location.href = "/zh/talks/";
+          },
         },{id: "nav-简历",
           title: "简历",
           description: "",
@@ -94,6 +101,11 @@ ninja.data = [{
           description: "",
           section: "",handler: () => {
               window.location.href = "/zh/projects/2024-nsfc-youth/";
+            },},{id: "talks-knowledge-graph-in-agentic-ai",
+          title: 'Knowledge Graph in Agentic AI',
+          description: "",
+          section: "",handler: () => {
+              window.location.href = "/zh/talks/2026-04-29-next/";
             },},{
         id: 'social-email',
         title: '',
