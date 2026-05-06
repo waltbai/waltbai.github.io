@@ -1,0 +1,43 @@
+---
+layout: page
+---
+{{ content }}
+
+{% if page.collection and page.collection.size > 0 %}
+    {% assign collection = site[page.collection] | sort: "date" %}
+    {% if collection and collection.size > 0 %}
+        {% for item in collection reversed %}
+            <div class="row">
+                <!-- Date -->
+                <div class="col-xs-2 cl-sm-2 col-md-2 text-center abbr">
+                    {% if item.date %}
+                        {% assign date = item.date %}
+                    {% else %}
+                        {% assign date = '' %}
+                    {% endif %}
+                    <abbr class="badge">{{ date }}</abbr>
+                </div>
+                <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+                    <!-- Title -->
+                    <div class="title font-weight-bold ml-1 ml-md-4">
+                        {{ item.title }}
+                    </div>
+                    <!-- Venue -->
+                    <div class="periodical ml-1 ml-md-4">
+                        {% if item.website %}
+                            <a href="{{ item.website }}">{{ item.venue }}</a>
+                        {% else %}
+                            {{ item.venue }}
+                        {% endif %}
+                    </div>
+                    <!-- Slides -->
+                    <div class="links ml-1 ml-md-4">
+                        {% if item.slides %}
+                            <a href="{{ item.slides | prepend: '/assets/pdf/slides/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endif %}
