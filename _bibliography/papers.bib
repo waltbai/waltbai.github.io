@@ -3,6 +3,26 @@
 
 @string{aps = {American Physical Society,}}
 
+@misc{arxiv-2026-1,
+  abbr         = {arXiv},
+  html         = {https://arxiv.org/abs/2606.03705},
+  title        = {Code-on-Graph: Iterative Programmatic Reasoning via Large Language Models on Knowledge Graphs},
+  author       = {Ding, Weiwei and
+                  Li, Zixuan and 
+                  Bai, Long and 
+                  Chen, Zhuo and 
+                  Su, Kun and 
+                  Wang, Fei and 
+                  Jin, Xiaolong and 
+                  Zhang, Jin and 
+                  Guo, Jiafeng and 
+                  Cheng, Xueqi },
+  abstract     = {Knowledge Graphs (KGs) are widely used to mitigate the limitations of Large Language Models (LLMs), such as outdated knowledge and hallucinations. Existing LLM-KG integration frameworks typically rely on predefined operators to retrieve factual knowledge from KGs and inject it into prompts for answer generation. This paradigm faces two critical bottlenecks: 1) Inflexibility: The predefined operators are limited in scope and thus lack sufficient compositional expressiveness to fully capture the complex semantics required by KG questions. 2) Unscalability: Direct injection of factual knowledge into prompts limits scalability in handling large-scale factual knowledge. To address these two bottlenecks, we propose Code-on-Graph (CoG), a programmatic reasoning framework for LLM-KG integration. Specifically, given the factual knowledge retrieved at each reasoning step, CoG first identifies the corresponding KG schemas and represents these schemas as Python classes, which serve as abstract interfaces to the retrieved facts. It then generates executable code grounded in these classes, with the retrieved facts instantiated as objects of the corresponding classes during execution. This design enables flexible code-based reasoning while avoiding the direct injection of large-scale factual knowledge into prompts. Experiments on WebQSP, CWQ, and GrailQA demonstrate that CoG outperforms prior state-of-the-art models by up to 10.5%.},
+  howpublished = {arXiv preprint},
+  month        = jun,
+  year         = {2026}
+}
+
 @inproceedings{SIGIR-2026,
   abbr      = {SIGIR-2026},
   html      = {https://arxiv.org/abs/2604.07720},
