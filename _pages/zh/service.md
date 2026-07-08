@@ -9,21 +9,24 @@ nav_order: 6
 
 <span class="font-weight-bold">会议领域主席：</span>  
 2024: EMNLP  
-2025: EMNLP
+2025: EMNLP  
+2026: EACL
 
 <span class="font-weight-bold">会议审稿：</span>  
 2023: AAAI, ACL, EMNLP  
 2024: AAAI, CCKS, NLPCC, EMNLP  
 2025: AAAI, NAACL, ACL, NLPCC, CCKS, EMNLP  
-2026: AAAI, EACL
+2026: AAAI, ACL, CCKS, CCIR
 
 <span class="font-weight-bold">期刊审稿：</span>  
-2026至今: The Knowledge Engineering Review (KER)
+2026-present: The Knowledge Engineering Review (KER)  
+2026-present: Journal of Computer Science and Technology (JCST)  
+2026-present: Knowledge-Based Systems (KnoSys)
 
 <span class="font-weight-bold">ACL Rolling Review (ARR)领域主席：</span>  
 2024: Dec  
 2025: Feb, May  
-2026: Jan
+2026: Jan, Mar
 
 <span class="font-weight-bold">ACL Rolling Review (ARR)审稿：</span>  
 2021: Nov  
