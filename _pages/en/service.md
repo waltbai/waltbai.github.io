@@ -36,5 +36,5 @@ nav_order: 6
 2025: Feb, Jul, Oct
 
 **Organizations:**  
-2024-present: Member, SIGSPG, OpenKG
+2024-present: Member, SIGSPG, OpenKG  
 2026-2031: Member, Youth Working Committee, Chinese Information Processing Society of China

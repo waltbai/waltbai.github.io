@@ -36,5 +36,5 @@ nav_order: 6
 2025: Feb, Jul, Oct
 
 <span class="font-weight-bold">学术组织：</span>  
-2024至今：OpenSPG，SIGSPG，成员
+2024至今：OpenSPG，SIGSPG，成员  
 2026-2031：中国中文信息学会，青年工作委员会，委员
