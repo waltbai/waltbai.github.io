@@ -16,7 +16,7 @@ nav_order: 6
 2023: AAAI, ACL, EMNLP  
 2024: AAAI, CCKS, NLPCC, EMNLP  
 2025: AAAI, NAACL, ACL, NLPCC, CCKS, EMNLP  
-2026: AAAI, ACL, CCKS, CCIR
+2026: AAAI, ACL, CCKS, CCIR, NLPCC
 
 <span class="font-weight-bold">期刊审稿：</span>  
 2026-present: The Knowledge Engineering Review (KER)  
