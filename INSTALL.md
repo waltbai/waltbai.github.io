@@ -15,6 +15,9 @@
   - [Deploy on Netlify](#deploy-on-netlify)
   - [Deployment to another hosting server (non GitHub Pages)](#deployment-to-another-hosting-server-non-github-pages)
   - [Deployment to a separate repository (advanced users only)](#deployment-to-a-separate-repository-advanced-users-only)
+- [Maintaining Dependencies](#maintaining-dependencies)
+  - [Updating Bundler](#updating-bundler)
+  - [Updating all dependencies](#updating-all-dependencies)
 - [Upgrading from a previous version](#upgrading-from-a-previous-version)
 
 # Installing and Deploying
@@ -164,14 +167,12 @@ If you need to manually re-deploy your website to GitHub pages, go to Actions, c
 1. [Use this template -> Create a new repository](https://github.com/new?template_name=al-folio&template_owner=alshedivat).
 2. Netlify: **Add new site** -> **Import an existing project** -> **GitHub** and give Netlify access to the repository you just created.
 3. Netlify: In the deploy settings
-
    - Set **Branch to deploy** to `main`
    - **Base directory** is empty
    - Set **Build command** to `sed -i "s/^\(baseurl: \).*$/baseurl:/" _config.yml && bundle exec jekyll build`
    - Set **Publish directory** to `_site`
 
 4. Netlify: Add the following two **environment variables**
-
    - | Key            | Value                                                                                  |
      | -------------- | -------------------------------------------------------------------------------------- |
      | `JEKYLL_ENV`   | `production`                                                                           |
@@ -232,6 +233,24 @@ In its default configuration, multi-language-al-folio will copy the top-level `R
 
 **Note:** Do _not_ run `jekyll clean` on your publishing source repo as this will result in the entire directory getting deleted, irrespective of the content of `keep_files` in `_config.yml`.
 
+## Maintaining Dependencies
+
+The project uses Bundler to track the Ruby gems required by Jekyll and its plugins.
+
+### Updating Bundler
+
+```bash
+bundle update --bundler
+```
+
+### Updating all dependencies
+
+```bash
+bundle update --all
+```
+
+After updating dependencies, run `docker compose up` and verify the site locally. Dependency changes can introduce breaking behavior, so keep the resulting `Gemfile.lock` changes together and review them before committing.
+
 ## Upgrading from a previous version
 
 If you installed **multi-language-al-folio** as described above, you can manually update your code by following the steps below:
@@ -240,7 +259,7 @@ If you installed **multi-language-al-folio** as described above, you can manuall
 # Assuming the current directory is <your-repo-name>
 $ git remote add upstream https://github.com/george-gca/multi-language-al-folio.git
 $ git fetch upstream
-$ git rebase v1.14.4
+$ git rebase v1.16.2
 ```
 
 If you have extensively customized a previous version, it might be trickier to upgrade.

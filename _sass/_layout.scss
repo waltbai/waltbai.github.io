@@ -19,7 +19,7 @@ body {
 
 body.fixed-top-nav {
   // Add some padding for the nav-bar.
-  padding-top: 56px;
+  padding-top: 57px;
 }
 
 body.sticky-bottom-footer {
@@ -35,6 +35,29 @@ body.sticky-bottom-footer {
 .profile {
   img {
     width: 100%;
+  }
+
+  // Keep social links with the profile while making them fit the sidebar.
+  .social .contact-icons {
+    font-size: 2rem;
+
+    a {
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-bottom: 0.5rem;
+      }
+
+      svg {
+        width: 1.75rem;
+        height: 2rem;
+
+        image {
+          width: 1.75rem;
+          height: 1.75rem;
+        }
+      }
+    }
   }
 }
 

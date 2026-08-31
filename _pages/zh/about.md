@@ -3,13 +3,13 @@ page_id: about
 layout: about
 title: 个人简介
 permalink: /
-subtitle: 
+subtitle:
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: 
+  more_info:
 
 news: false # includes a list of news items
 latest_posts: false # includes a list of latest posts

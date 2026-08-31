@@ -7,7 +7,7 @@
           {% if site.title[site.active_lang] == 'blank' %}
             {% if site.name[site.active_lang].first_name %}
               {%- comment -%} <span class="font-weight-bold"> {%- endcomment -%}
-                {{- site.name[site.active_lang].first_name -}}
+              {{- site.name[site.active_lang].first_name -}}
               {%- comment -%} </span> {%- endcomment -%}
             {% endif %}
             {% if site.name[site.active_lang].middle_name %}
@@ -22,7 +22,7 @@
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
+        <div class="navbar-brand social">{% social_links %}</div>
       {% endif %}
       <!-- Navbar Toggle -->
       <button
