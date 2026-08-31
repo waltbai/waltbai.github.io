@@ -15,7 +15,7 @@ nav_order: 6
 **Conference Reviewer:**  
 2023: AAAI, ACL, EMNLP  
 2024: AAAI, CCKS, NLPCC, EMNLP  
-2025: AAAI, NAACL, ACL, NLPCC, CCKS, CCIR, EMNLP  
+2025: AAAI, NAACL, ACL, NLPCC, CCKS, EMNLP  
 2026: AAAI, ACL, CCKS, CCIR, NLPCC
 
 **Journal Reviewer:**  
