@@ -3,6 +3,23 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{emnlp-2026,
+  abbr      = {EMNLP-2026},
+  html      = {https://arxiv.org/abs/2606.21048},
+  code      = {https://github.com/ICT-KCG/ConceptE},
+  title     = {Event Ontology Expansion via LLM-Based Conceptualization},
+  author    = {Ren, Weicheng and
+               Li, Zixuan and 
+               Bai, Long and 
+               Jin, Xiaolong and 
+               Guo, Jiafeng and 
+               Cheng, Xueqi },
+  abstract  = {Event ontology expansion aims to discover emerging event types from data and extend them to appropriate positions in the existing event ontology.. Existing methods typically cluster contextualized trigger representations and attach induced clusters to the ontology based on instance-level similarity. However, ontology expansion requires concept-level semantics that characterize event types, whereas contextualized trigger representations often conflate these semantics with surface contextual variation, leading to unstable clustering and unreliable hierarchy expansion. To address this issue, we propose ConceptE, a conceptualization-enhanced framework for event ontology expansion. ConceptE first derives concept-level semantics by prompting an LLM with the sentence and event trigger, producing a concise concept name and a natural-language description. It then jointly encodes these semantics with trigger information to build concept-enhanced representations aligned with ontology-level reasoning. This representation design supports more coherent event clustering, more reliable hierarchy expansion, and ontology-consistent type naming. Experiments on ACE, ERE, and MAVEN demonstrate that ConceptE consistently outperforms state-of-the-art approaches across all subtasks of event ontology expansion. In particular, it achieves improvements of up to 12.37\% in BCubed-F1 for event clustering and 6.48\% in Taxo\_F1 for hierarchy expansion, demonstrating the effectiveness of the proposed ConceptE method.},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
+  month     = oct,
+  year      = {2026}
+}
+
 @misc{arxiv-2026-3,
   abbr         = {arXiv},
   html         = {https://arxiv.org/abs/2608.00764},
@@ -18,22 +35,6 @@
   abstract     = {Financial indicators are essential tools for transforming raw financial data into interpretable measures for various downstream tasks, such as valuation, risk assessment, and economic analysis. However, existing financial benchmarks largely focus on answer-level accuracy and often assume that relevant data are already provided, leaving the assessment of the intermediate process of indicator construction underexplored. In this work, we propose FinDeepIndicator, the first benchmark dedicated to evaluating Deep Research (DR) agents in end-to-end financial indicator construction. Specifically, FinDeepIndicator evaluates DR agents across four stages in indicator construction: formula specification, data collection, indicator calculation, and answer generation, and covers fundamental, technical, and macroeconomic indicators organized into 21 fine-grained sub-categories. It contains 3,350 curated question-answer (QA) pairs derived from both U.S. and Chinese markets, 10 years of historical financial data, and 800 listed companies. Extensive experiments on search-equipped Large Language Models (LLMs) and DR agents show that, while LLMs generally perform well in formula specification, their accuracy drops substantially during data retrieval and numerical execution. DR agents consistently outperform search-equipped LLMs, yet remain unreliable in realistic financial analysis settings. These findings provide insights for developing more capable and trustworthy DR agents in finance.},
   howpublished = {arXiv preprint},
   month        = aug,
-  year         = {2026}
-}
-
-@misc{arxiv-2026-2,
-  abbr         = {arXiv},
-  html         = {https://arxiv.org/abs/2606.21048},
-  title        = {Event Ontology Expansion via LLM-Based Conceptualization},
-  author       = {Ren, Weicheng and
-                  Li, Zixuan and 
-                  Bai, Long and 
-                  Jin, Xiaolong and 
-                  Guo, Jiafeng and 
-                  Cheng, Xueqi },
-  abstract     = {Event ontology expansion aims to discover emerging event types from data and extend them to appropriate positions in the existing event ontology.. Existing methods typically cluster contextualized trigger representations and attach induced clusters to the ontology based on instance-level similarity. However, ontology expansion requires concept-level semantics that characterize event types, whereas contextualized trigger representations often conflate these semantics with surface contextual variation, leading to unstable clustering and unreliable hierarchy expansion. To address this issue, we propose ConceptE, a conceptualization-enhanced framework for event ontology expansion. ConceptE first derives concept-level semantics by prompting an LLM with the sentence and event trigger, producing a concise concept name and a natural-language description. It then jointly encodes these semantics with trigger information to build concept-enhanced representations aligned with ontology-level reasoning. This representation design supports more coherent event clustering, more reliable hierarchy expansion, and ontology-consistent type naming. Experiments on ACE, ERE, and MAVEN demonstrate that ConceptE consistently outperforms state-of-the-art approaches across all subtasks of event ontology expansion. In particular, it achieves improvements of up to 12.37\% in BCubed-F1 for event clustering and 6.48\% in Taxo\_F1 for hierarchy expansion, demonstrating the effectiveness of the proposed ConceptE method.},
-  howpublished = {arXiv preprint},
-  month        = jun,
   year         = {2026}
 }
 

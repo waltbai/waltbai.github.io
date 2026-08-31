@@ -12,7 +12,7 @@ nav_order: 6
 2025: EMNLP  
 2026: EACL
 
-**Conference Program Committee member (Reviewer):**  
+**Conference Reviewer:**  
 2023: AAAI, ACL, EMNLP  
 2024: AAAI, CCKS, NLPCC, EMNLP  
 2025: AAAI, NAACL, ACL, NLPCC, CCKS, CCIR, EMNLP  
