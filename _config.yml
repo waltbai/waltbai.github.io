@@ -7,7 +7,7 @@ title:
   en: blank
   zh: blank
 # first_name: Long
-# middle_name: 
+# middle_name:
 # last_name: Bai
 name:
   en:
@@ -19,8 +19,8 @@ name:
     middle_name:
     last_name: 白龙
 email: bailong@ict.ac.cn
-keywords:  # add your own keywords or leave empty
-icon:  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+keywords: # add your own keywords or leave empty
+icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://waltbai.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -113,7 +113,7 @@ related_blog_posts:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
   repo: waltbai/waltbai.github.io # <your-github-user-name>/<your-github-repo-name>
-  repo_id:  # leave empty or specify your repo_id (see https://giscus.app/)
+  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
   mapping: title # identify discussions by post title

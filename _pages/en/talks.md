@@ -5,7 +5,7 @@ permalink: /talks/
 collection: talks
 
 title: Talks
-description: 
+description:
 
 nav: true
 nav_order: 5

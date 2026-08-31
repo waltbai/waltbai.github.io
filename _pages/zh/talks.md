@@ -5,7 +5,7 @@ permalink: /talks/
 collection: talks
 
 title: 学术报告
-description: 
+description:
 
 nav: true
 nav_order: 5
