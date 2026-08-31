@@ -24,3 +24,4 @@ jobs:
           target_gh_token: ${{ secrets.TEMPLATE_SYNC_TOKEN }}
           source_repo_path: george-gca/multi-language-al-folio
           upstream_branch: main
+          template_sync_ignore_file_path: .templatesyncignore

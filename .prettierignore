@@ -17,3 +17,4 @@ _data/citations.yml
 .venv/
 .uv-cache/
 node_modules/
+.templatesyncignore
