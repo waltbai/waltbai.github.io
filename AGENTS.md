@@ -16,9 +16,9 @@
 - `_talks/`：学术报告元数据；幻灯片位于 `assets/pdf/slides/`。
 - `_data/`：社交账号、仓库列表、作者信息、CV 和双语界面文案。
 - `_includes/`、`_layouts/`：Liquid 组件和页面布局，其中包含本项目的定制。
-- `_sass/`、`assets/css/`、`assets/js/`：主题样式与前端交互。
-- `_plugins/`：本地 Jekyll 插件。
+- `_sass/`、`assets/css/`、`assets/js/` 和 `_plugins/`：主题样式、前端交互与本地插件。
 - `.github/workflows/`：构建、部署、检查和模板同步工作流。
+- `.templatesyncignore`：自动模板同步时必须保留的项目文件和目录。
 
 当前站点没有实际维护博客、新闻和书籍内容。不要把模板中的示例 `_posts`、`_news`、
 `_books`、`en-us` 或 `pt-br` 内容重新带入站点。
@@ -29,25 +29,27 @@
 
 - `_config.yml` 中的个人姓名、邮箱、网址、`en/zh` 语言配置和 Scholar 作者信息。
 - `_data/socials.yml` 中的 GitHub、邮箱和 Google Scholar 标识。
-- `_includes/header.liquid` 和 `_includes/metadata.liquid` 中的双语姓名读取方式。
-- `_layouts/about.liquid` 中首页头像区域的社交图标位置。
+- `_includes/header.liquid` 和 `_includes/metadata.liquid` 中的双语姓名读取方式；中文姓名整体
+  存放在 `last_name` 中，以保持中文姓名顺序和论文作者匹配。
+- `_layouts/about.liquid` 中首页社交图标保持在头像区域，图标尺寸为 `2rem`。
 - `_layouts/bib.liquid` 中论文作者加粗、作者分隔符和出版信息格式。
+- `_layouts/publications.liquid`、`_layouts/talks.liquid`、`_includes/related_posts.liquid` 和
+  `_includes/research_project.liquid` 的当前页面结构及双语行为。
+- `_includes/repository/my_repo.liquid` 只展示配置的开源仓库，不展示用户概览。
 - `_includes/resume/` 中 CV 条目的链接显示方式。
-- `_sass/_themes.scss` 中明暗主题分隔线颜色。
+- `_sass/_layout.scss` 中的布局和社交图标样式，以及 `_sass/_themes.scss` 的主题分隔线颜色。
+- `_config.yml` 的 `external_services` 和当前插件化社交链接方案；不要恢复旧版
+  `_includes/social.liquid`。
 
-仓库包含两个 Git 远端：
+Git 远端 `origin` 指向 `waltbai/waltbai.github.io`，`template` 指向模板仓库。
 
-- `origin`：`waltbai/waltbai.github.io`
-- `template`：`george-gca/multi-language-al-folio`
-
-同步模板时必须在临时分支中进行三方比较和本地构建验证。不要在 `main` 上直接执行未经检查的
-模板合并，也不要使用模板版本直接覆盖个人内容或布局文件。
+自动同步通过 `.templatesyncignore` 保护个人内容、双语页面和定制布局。修改受保护文件时，
+应保留当前项目行为，并在临时分支中选择性吸收模板更新。
 
 # 本地调试环境
 
-本项目使用 Docker Compose 提供 Ruby、Jekyll、ImageMagick 和 Node.js 环境，不要求宿主机
-单独安装 Ruby 或 Bundler。当前 Jekyll 镜像不包含 Python；Python 维护脚本使用 `uv` 创建的
-本地虚拟环境运行。
+Docker Compose 提供 Ruby、Jekyll、ImageMagick 和 Node.js，无需宿主机安装 Ruby 或 Bundler。
+Python 维护脚本使用 `uv` 创建的本地虚拟环境运行。
 
 ## 启动开发服务器
 
@@ -57,16 +59,19 @@
 docker compose up
 ```
 
-首次运行时 Docker 会构建或拉取镜像。当前 Compose 服务名为 `jekyll`，会将仓库挂载到
-`/srv/jekyll`，并启动带文件监视和 LiveReload 的 Jekyll 开发服务器。
+Compose 服务名为 `jekyll`，将仓库挂载到 `/srv/jekyll` 并启动文件监视和 LiveReload。
 
 可访问地址：
 
 - 站点：<http://localhost:8080>
 - LiveReload：`http://localhost:35729`
 
-`_config.yml` 变化会由 `bin/entry_point.sh` 监测并重启 Jekyll；其他内容变化由 Jekyll watch
-自动重新生成。
+`_config.yml` 变化会由 `bin/entry_point.sh` 监测并重启 Jekyll；多数页面、布局和样式变化由
+Jekyll watch 自动重新生成。`_bibliography/*.bib` 可能不会触发重建，修改后应执行：
+
+```powershell
+docker compose restart jekyll
+```
 
 ## 查看状态和日志
 
@@ -81,7 +86,7 @@ docker compose logs --follow jekyll
 docker compose run --rm -e JEKYLL_ENV=production jekyll bundle exec jekyll build
 ```
 
-成功构建的输出位于 `_site/`。该目录已被 Git 忽略，不应提交。
+构建输出位于已被 Git 忽略的 `_site/`，不应提交。
 
 如果 `Gemfile`、`Gemfile.lock`、`Dockerfile` 或系统依赖发生变化，应重新构建镜像：
 
@@ -91,9 +96,12 @@ docker compose build --no-cache
 
 然后重新执行生产构建或启动开发服务器。
 
+构建中现有的 Sass 弃用和未配置分页警告可以暂时接受，但新增的 Liquid 错误、构建失败或页面
+缺失不能作为已知警告忽略。
+
 ## Python 维护脚本
 
-在仓库根目录使用 `uv` 创建 Python 3.13 虚拟环境并安装依赖：
+使用 `uv` 创建 Python 3.13 虚拟环境并安装依赖：
 
 ```powershell
 uv venv --python 3.13
@@ -106,9 +114,17 @@ uv pip install --python .venv\Scripts\python.exe -r requirements.txt
 .venv\Scripts\python.exe bin\update_scholar_citations.py
 ```
 
-脚本从 `_data/socials.yml` 读取 `scholar_userid`，并将结果写入
-`_data/citations.yml`。该缓存文件属于站点数据，应提交到 Git；不要提交虚拟环境或 Python
-生成的 `__pycache__/`。
+脚本从 `_data/socials.yml` 读取 `scholar_userid`，写入应提交的 `_data/citations.yml`。不要提交
+虚拟环境或 Python 生成的 `__pycache__/`。
+
+## 论文数据维护
+
+论文信息统一维护在 `_bibliography/papers.bib`：
+
+- 论文页面链接使用 `html = {...}`。
+- 实验代码链接使用 `code = {...}`，放在 `html` 后、`title` 前。
+- 不要为了展示代码链接修改 `_data/citations.yml`。
+- 修改后重启 Jekyll，并检查 `/publications/` 和 `/zh/publications/`。
 
 ## 停止服务
 
@@ -120,8 +136,7 @@ docker compose down
 
 修改模板、布局、插件或依赖后，至少检查以下路由均能访问，并比较中英文页面布局：
 
-- `/`
-- `/zh/`
+- `/` 和 `/zh/`
 - `/publications/`
 - `/zh/publications/`
 - `/fundings/` 和 `/zh/fundings/`
@@ -140,3 +155,4 @@ docker compose down
 - 不提交 `_site/`、`.jekyll-cache/`、`node_modules/`、`vendor/` 或下载生成的 `assets/libs/`。
 - 保留用户已有的未提交改动；不要用模板版本覆盖不相关文件。
 - 涉及模板同步时，应将基础设施、样式、Scholar、插件和工作流更新拆分验证，避免一次提交混合所有变化。
+- `.templatesyncignore` 是模板同步保护范围的准则；新增个人内容或布局定制时同步更新该文件。
