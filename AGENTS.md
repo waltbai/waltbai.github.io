@@ -45,8 +45,9 @@
 
 # 本地调试环境
 
-本项目使用 Docker Compose 提供完整的 Ruby、Jekyll、ImageMagick、Node.js 和 Python 环境，
-不要求宿主机单独安装 Ruby 或 Bundler。
+本项目使用 Docker Compose 提供 Ruby、Jekyll、ImageMagick 和 Node.js 环境，不要求宿主机
+单独安装 Ruby 或 Bundler。当前 Jekyll 镜像不包含 Python；Python 维护脚本使用 `uv` 创建的
+本地虚拟环境运行。
 
 ## 启动开发服务器
 
@@ -89,6 +90,25 @@ docker compose build --no-cache
 ```
 
 然后重新执行生产构建或启动开发服务器。
+
+## Python 维护脚本
+
+在仓库根目录使用 `uv` 创建 Python 3.13 虚拟环境并安装依赖：
+
+```powershell
+uv venv --python 3.13
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
+```
+
+`.venv/` 已被 Git 忽略。无需激活虚拟环境即可运行 Google Scholar 引用缓存更新：
+
+```powershell
+.venv\Scripts\python.exe bin\update_scholar_citations.py
+```
+
+脚本从 `_data/socials.yml` 读取 `scholar_userid`，并将结果写入
+`_data/citations.yml`。该缓存文件属于站点数据，应提交到 Git；不要提交虚拟环境或 Python
+生成的 `__pycache__/`。
 
 ## 停止服务
 

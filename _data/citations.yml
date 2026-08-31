@@ -1,0 +1,175 @@
+metadata:
+  last_updated: '2026-08-31'
+papers:
+  Zrd9pCMAAAAJ:08ZZubdj9fEC:
+    citations: 15
+    title: 'Maximizing local entropy where it matters: Prefix-aware localized llm unlearning'
+    year: '2026'
+  Zrd9pCMAAAAJ:1sJd4Hv_s6UC:
+    citations: 108
+    title: 'Knowcoder: Coding structured knowledge into llms for universal information extraction'
+    year: '2024'
+  Zrd9pCMAAAAJ:2osOgNQ5qMEC:
+    citations: 6
+    title: "\u57FA\u4E8E\u8FDC\u7A0B\u76D1\u7763\u7684\u5173\u7CFB\u62BD\u53D6\u7814\u7A76\u7EFC\u8FF0"
+    year: '2019'
+  Zrd9pCMAAAAJ:3s1wT3WcHBgC:
+    citations: 162
+    title: 'What is Event Knowledge Graph: A Survey'
+    year: '2022'
+  Zrd9pCMAAAAJ:4OULZ7Gr8RgC:
+    citations: 100
+    title: 'HiSMatch: Historical Structure Matching based Temporal Knowledge Graph Reasoning'
+    year: '2022'
+  Zrd9pCMAAAAJ:4fKUyHm3Qg0C:
+    citations: 0
+    title: 'Towards Knowledgeable Deep Research: Framework and Benchmark'
+    year: '2026'
+  Zrd9pCMAAAAJ:5Ul4iDaHHb8C:
+    citations: 0
+    title: 'FinDeepIndicator: Benchmarking Deep Research Agents in End-to-End Financial Indicator Construction'
+    year: '2026'
+  Zrd9pCMAAAAJ:738O_yMBCRsC:
+    citations: 1
+    title: Mixture Policy based Multi-Hop Reasoning over N-tuple Temporal Knowledge Graphs
+    year: '2025'
+  Zrd9pCMAAAAJ:8AbLer7MMksC:
+    citations: 0
+    title: Event Ontology Expansion via LLM-Based Conceptualization
+    year: '2026'
+  Zrd9pCMAAAAJ:9yKSN-GCB0IC:
+    citations: 2
+    title: Bidirectional Dependency-Guided Attention for Relation Extraction
+    year: '2020'
+  Zrd9pCMAAAAJ:B3FOqHPlNUQC:
+    citations: 3
+    title: 'Towards Robust Universal Information Extraction: Dataset, Evaluation, and Solution'
+    year: '2025'
+  Zrd9pCMAAAAJ:CHSYGLWDkRkC:
+    citations: 11
+    title: Temporal Knowledge Graph Reasoning Based on N-tuple Modeling
+    year: '2023'
+  Zrd9pCMAAAAJ:D03iK_w7-QYC:
+    citations: 17
+    title: Knowledge-Enhanced Self-Supervised Prototypical Network for Few-Shot Event Detection
+    year: '2022'
+  Zrd9pCMAAAAJ:EUQCXRtRnyEC:
+    citations: 3
+    title: Nested Event Extraction upon Pivot Element Recogniton
+    year: '2024'
+  Zrd9pCMAAAAJ:K3LRdlH-MEoC:
+    citations: 11
+    title: 'G2S: A General-to-Specific Learning Framework for Temporal Knowledge Graph Forecasting with Large Language Models'
+    year: '2025'
+  Zrd9pCMAAAAJ:OU6Ihb5iCvQC:
+    citations: 20
+    title: A New Pipeline for Knowledge Graph Reasoning Enhanced by Large Language Models Without Fine-Tuning
+    year: '2024'
+  Zrd9pCMAAAAJ:P5F9QuxV20EC:
+    citations: 35
+    title: Tree-of-Reasoning Question Decomposition for Complex Question Answering with Large Language Models
+    year: '2024'
+  Zrd9pCMAAAAJ:SP6oXDckpogC:
+    citations: 24
+    title: 'Temporal Knowledge Graph Question Answering: A Survey'
+    year: '2024'
+  Zrd9pCMAAAAJ:Tiz5es2fbqcC:
+    citations: 2
+    title: 'Towards Robust Universal Information Extraction: Benchmark, Evaluation, and Solution'
+    year: '2025'
+  Zrd9pCMAAAAJ:UeHWp8X0CEIC:
+    citations: 53
+    title: Rule-Aware Reinforcement Learning for Knowledge Graph Reasoning
+    year: '2021'
+  Zrd9pCMAAAAJ:WbkHhVStYXYC:
+    citations: 1
+    title: "\u4EE3\u7801\u5927\u8BED\u8A00\u6A21\u578B\u8D4B\u80FD\u7684\u77E5\u8BC6\u56FE\u8C31\u5173\u952E\u6280\u672F\u7EFC\u8FF0."
+    year: '2025'
+  Zrd9pCMAAAAJ:XiSMed-E-HIC:
+    citations: 12
+    title: 'Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction'
+    year: '2025'
+  Zrd9pCMAAAAJ:_Qo2XoVZTnwC:
+    citations: 43
+    title: Integrating Deep Event-Level and Script-Level Information for Script Event Prediction
+    year: '2021'
+  Zrd9pCMAAAAJ:_xSYboBqXhAC:
+    citations: 7
+    title: 'ProtoEM: A Prototype-Enhanced Matching Framework for Event Relation Extraction'
+    year: '2023'
+  Zrd9pCMAAAAJ:abG-DnoFyZgC:
+    citations: 91
+    title: Retrieval-augmented code generation for universal information extraction
+    year: '2024'
+  Zrd9pCMAAAAJ:b0M2c_1WBrUC:
+    citations: 8
+    title: An In-Context Schema Understanding Method for Knowledge Base Question Answering
+    year: '2024'
+  Zrd9pCMAAAAJ:bFI3QPDXJZMC:
+    citations: 21
+    title: 'CFGL-LCR: A Counterfactual Graph Learning Framework for Legal Case Retrieval'
+    year: '2023'
+  Zrd9pCMAAAAJ:cFHS6HbyZ2cC:
+    citations: 0
+    title: "\u9762\u5411\u77E5\u8BC6\u5E93\u95EE\u7B54\u7684\u95EE\u53E5\u8BED\u4E49\u89E3\u6790\u7814\u7A76\u7EFC\u8FF0"
+    year: '2022'
+  Zrd9pCMAAAAJ:d1gkVwhDpl0C:
+    citations: 7
+    title: Entity Type Enhanced Neural Model for Distantly Supervised Relation Extraction (Student Abstract)
+    year: '2020'
+  Zrd9pCMAAAAJ:dshw04ExmUIC:
+    citations: 3
+    title: Class-Incremental Few-Shot Event Detection
+    year: '2024'
+  Zrd9pCMAAAAJ:f2IySw72cVMC:
+    citations: 15
+    title: Rich event modeling for script event prediction
+    year: '2023'
+  Zrd9pCMAAAAJ:fPk4N6BV_jEC:
+    citations: 11
+    title: 'Meta-CQG: A Meta-Learning Framework for Complex Question Generation over Knowledge Bases'
+    year: '2022'
+  Zrd9pCMAAAAJ:l7t_Zn2s7bgC:
+    citations: 1
+    title: 'KnowCoder-V2: Deep Knowledge Analysis'
+    year: '2025'
+  Zrd9pCMAAAAJ:nb7KW1ujOQ8C:
+    citations: 2
+    title: Selective Temporal Knowledge Graph Reasoning
+    year: '2024'
+  Zrd9pCMAAAAJ:pyW8ca7W8N0C:
+    citations: 50
+    title: Semantic Structure Enhanced Event Causality Identification
+    year: '2023'
+  Zrd9pCMAAAAJ:qjMakFHDy7sC:
+    citations: 11
+    title: "\u57FA\u4E8E\u6DF1\u5EA6\u5B66\u4E60\u7684\u5173\u7CFB\u62BD\u53D6\u7814\u7A76\u7EFC\u8FF0"
+    year: '2019'
+  Zrd9pCMAAAAJ:rO6llkc54NcC:
+    citations: 216
+    title: Complex Evolutional Pattern Learning for Temporal Knowledge Graph Reasoning
+    year: '2022'
+  Zrd9pCMAAAAJ:sSrBHYA8nusC:
+    citations: 0
+    title: 'Code-on-Graph: Iterative Programmatic Reasoning via Large Language Models on Knowledge Graphs'
+    year: '2026'
+  Zrd9pCMAAAAJ:tOudhMTPpwUC:
+    citations: 13
+    title: 'Knowcoder-x: Boosting multilingual information extraction via code'
+    year: '2025'
+  Zrd9pCMAAAAJ:tS2w5q8j5-wC:
+    citations: 0
+    title: 'Identify-Conceptualize-Align: A Schema-Adaptive Framework for Unified Entity Recognition and Event Detection'
+    year: '2026'
+  Zrd9pCMAAAAJ:u-x6o8ySG0sC:
+    citations: 59
+    title: Hierarchical Query Graph Generation for Complex Question Answering over Knowledge Graph
+    year: '2020'
+  Zrd9pCMAAAAJ:u9iWguZQMMsC:
+    citations: 32
+    title: Large Language Model-Based Event Relation Extraction with Rationales
+    year: '2025'
+  Zrd9pCMAAAAJ:vRqMK49ujn8C:
+    citations: 10
+    title: 'Beyond dialogue time: Temporal semantic memory for personalized llm agents'
+    year: '2026'
