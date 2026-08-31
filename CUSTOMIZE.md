@@ -2,7 +2,7 @@
 
 Here we will give you some tips on how to customize the website. One important thing to note is that **ALL** the changes you make should be done on the **main** branch of your repository. The `gh-pages` branch is automatically overwritten every time you make a change to the main branch.
 
-Note that throughout the [README.md](README.md) and [CUSTOMIZE.md](CUSTOMIZE.md) files, the default language is English (LANG = en-us). You must have an equivalent file or path for each language you have defined in [\_config.yml](_config.yml). For example, if you have defined `languages: ["en-us", "pt-br"]`, you must have 2 versions of the file `_data/LANG/cv.yml`: [\_data/en-us/cv.yml](_data/en-us/cv.yml) and [\_data/pt-br/cv.yml](_data/pt-br/cv.yml).
+This repository uses English (`LANG = en`) as its default language and Chinese (`LANG = zh`) as its second language. Keep equivalent files or paths for both languages when changing language-specific content. For example, CV data is stored in [\_data/en/cv.yml](_data/en/cv.yml) and [\_data/zh/cv.yml](_data/zh/cv.yml).
 
 ## Project structure
 
@@ -63,6 +63,23 @@ What this means is, if there is no resume data defined in [\_config.yml](_config
 
 The user and repository information is defined in [\_data/repositories.yml](_data/repositories.yml). You can add as many users and repositories as you want. Both informations are used in the `repositories` section.
 
+### Configuring external service URLs
+
+The repository page uses external services to display GitHub statistics and trophies. By default, these are:
+
+- `github-readme-stats.vercel.app` for repository cards
+- `github-profile-trophy.vercel.app` for GitHub profile trophies
+
+These services are hosted by third parties. To use self-hosted instances, configure their base URLs in [\_config.yml](_config.yml):
+
+```yaml
+external_services:
+  github_readme_stats_url: https://github-readme-stats.vercel.app
+  github_profile_trophy_url: https://github-profile-trophy.vercel.app
+```
+
+For self-hosting instructions, see [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) and [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy).
+
 ## Creating new pages
 
 You can create new pages by adding new Markdown files in the [\_pages](_pages/) directory. The easiest way to do this is to copy an existing page and modify it. You can choose the layout of the page by changing the [layout](https://jekyllrb.com/docs/layouts/) attribute in the [frontmatter](https://jekyllrb.com/docs/front-matter/) of the Markdown file, and also the path to access it by changing the [permalink](https://jekyllrb.com/docs/permalinks/) attribute. You can also add new layouts in the [\_layouts](_layouts/) directory if you feel the need for it. To have the page be displayed for different languages, simply create one markdown file with the same name in each language. It is possible to [use different permalinks per language](https://github.com/untra/polyglot?tab=readme-ov-file#using-different-permalinks-per-language) if you want to.
@@ -97,7 +114,7 @@ To access the collections, you can use the `site.COLLECTION_NAME` variable in yo
 
 To add publications create a new entry in the [\_bibliography/papers.bib](_bibliography/papers.bib) file. You can find the BibTeX entry of a publication in Google Scholar by clicking on the quotation marks below the publication title, then clicking on "BibTeX", or also in the conference page itself. By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
 
-You can add extra information to a publication, like a PDF file in the `assets/pdfs/` directory and add the path to the PDF file in the BibTeX entry with the `pdf` field. Some of the supported fields are: `abstract`, `altmetric`, `annotation`, `arxiv`, `bibtex_show`, `blog`, `code`, `dimensions`, `doi`, `eprint`, `html`, `isbn`, `pdf`, `pmid`, `poster`, `slides`, `supp`, `video`, and `website`.
+You can add extra information to a publication, like a PDF file in the `assets/pdfs/` directory and add the path to the PDF file in the BibTeX entry with the `pdf` field. Some of the supported fields are: `abstract`, `altmetric`, `annotation`, `arxiv`, `bibtex_show`, `blog`, `code`, `dimensions`, `doi`, `eprint`, `hal`, `html`, `isbn`, `pdf`, `pmid`, `poster`, `slides`, `supp`, `video`, and `website`.
 
 ### Author annotation
 
@@ -147,6 +164,7 @@ There are several custom bibtex keywords that you can use to affect how the entr
 - `blog`: Adds a "Blog" button redirecting to the specified link
 - `code`: Adds a "Code" button redirecting to the specified link
 - `dimensions`: Adds a [Dimensions](https://www.dimensions.ai/) badge (Note: if DOI or PMID is provided just use `true`, otherwise only add the Dimensions' identifier here - the link is generated automatically)
+- `hal`: Adds a link to the HAL website (only add the `hal-xxx` or `tel-xxx` identifier)
 - `html`: Inserts an "HTML" button redirecting to the user-specified link
 - `pdf`: Adds a "PDF" button redirecting to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
 - `poster`: Adds a "Poster" button redirecting to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
@@ -159,6 +177,22 @@ You can implement your own buttons by editing the [\_layouts/bib.liquid](_layout
 ## Changing theme color
 
 A variety of beautiful theme colors have been selected for you to choose from. The default is purple, but you can quickly change it by editing the `--global-theme-color` variable in the [\_sass/\_themes.scss](_sass/_themes.scss) file. Other color variables are listed there as well. The stock theme color options available can be found at [\_sass/\_variables.scss](_sass/_variables.scss). You can also add your own colors to this file assigning each a name for ease of use across the template.
+
+## Customizing layout and UI
+
+The following options in [\_config.yml](_config.yml) control the global layout:
+
+```yaml
+navbar_fixed: true
+footer_fixed: true
+back_to_top: true
+max_width: 930px
+```
+
+- `navbar_fixed`: keeps the navigation bar at the top while scrolling.
+- `footer_fixed`: fixes the footer to the bottom of the viewport.
+- `back_to_top`: enables the back-to-top button.
+- `max_width`: controls the maximum width of the main content area.
 
 ## Adding social media information
 
@@ -298,3 +332,15 @@ In this folder you need to store your file in the same format as you would in `_
   - `2025-08-27-file2.md` will be posted exactly on 27-August-2025
   - `File3.md` will not be posted at all
   - `2026-02-31-file4.md` is supposed to be posted on 31-February-2026, but there is no 31st in February hence this file will never be posted either
+
+## Google Scholar citation cache updates
+
+The workflow [.github/workflows/update-citations.yml](.github/workflows/update-citations.yml) periodically runs [bin/update_scholar_citations.py](bin/update_scholar_citations.py), reads `scholar_userid` from [\_data/socials.yml](_data/socials.yml), and updates [\_data/citations.yml](_data/citations.yml).
+
+To populate or test the cache locally on Windows, create the virtual environment described in [AGENTS.md](AGENTS.md), then run:
+
+```powershell
+.venv\Scripts\python.exe bin\update_scholar_citations.py
+```
+
+The workflow can commit cache changes with the default `GITHUB_TOKEN`, but commits created by that token do not trigger subsequent workflows. To trigger deployment automatically after a citation update, create a Personal Access Token with repository contents write access, store it as the `PAT` Actions secret, and enable the commented `token: ${{ secrets.PAT }}` checkout setting in `update-citations.yml`. Otherwise, manually run the deploy workflow or wait for the next regular site deployment.
