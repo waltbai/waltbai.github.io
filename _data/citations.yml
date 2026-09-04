@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-31'
+  last_updated: '2026-09-04'
 papers:
   Zrd9pCMAAAAJ:08ZZubdj9fEC:
     citations: 15
@@ -14,7 +14,7 @@ papers:
     title: "\u57FA\u4E8E\u8FDC\u7A0B\u76D1\u7763\u7684\u5173\u7CFB\u62BD\u53D6\u7814\u7A76\u7EFC\u8FF0"
     year: '2019'
   Zrd9pCMAAAAJ:3s1wT3WcHBgC:
-    citations: 162
+    citations: 163
     title: 'What is Event Knowledge Graph: A Survey'
     year: '2022'
   Zrd9pCMAAAAJ:4OULZ7Gr8RgC:
@@ -70,7 +70,7 @@ papers:
     title: Tree-of-Reasoning Question Decomposition for Complex Question Answering with Large Language Models
     year: '2024'
   Zrd9pCMAAAAJ:SP6oXDckpogC:
-    citations: 24
+    citations: 25
     title: 'Temporal Knowledge Graph Question Answering: A Survey'
     year: '2024'
   Zrd9pCMAAAAJ:Tiz5es2fbqcC:
@@ -138,7 +138,7 @@ papers:
     title: Selective Temporal Knowledge Graph Reasoning
     year: '2024'
   Zrd9pCMAAAAJ:pyW8ca7W8N0C:
-    citations: 50
+    citations: 51
     title: Semantic Structure Enhanced Event Causality Identification
     year: '2023'
   Zrd9pCMAAAAJ:qjMakFHDy7sC:
