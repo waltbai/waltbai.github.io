@@ -22,9 +22,4 @@ He has been currently visiting NExT++ Centre, National University of Singapore f
 
 Before that, he obtained Ph.D degree from University of Chinese Academy of Sciences (UCAS) in 2023, supervised by [Prof. Xueqi Cheng](https://bigdatalab.ac.cn/yjdw/jcrc/202203/t20220308_20663.html), and obtained bachelor's degree from [Zhejiang University](https://www.zju.edu.cn/) in 2016.
 
-His general research interest lies in the intersection of knowledge computing and natural language processing.
-Now, he focuses on knowledge-enhanced deep research, including:
-knowledge organization for long multimodal knowledge sources;
-knowledge computing for multimodal content generation;
-knowledge-guided planning for complex analysis tasks;
-and evaluation of deep research agents especially for knowledge-related abilities.
+His current research focuses on scientific knowledge computing for research agents, including scientific knowledge acquisition, reasoning, and application. He explores how scientific knowledge can be represented, acquired, and continuously accumulated; how existing knowledge can be connected, verified, and synthesized to derive new insights and generate hypotheses; and how knowledge can support research tasks and enable the learning and reuse of research procedures.
