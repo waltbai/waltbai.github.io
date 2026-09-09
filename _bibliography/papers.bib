@@ -39,6 +39,25 @@
   year         = {2026}
 }
 
+@misc{arxiv-2026-4,
+  abbr         = {arXiv},
+  html         = {https://arxiv.org/abs/2609.02894},
+  title        = {R\textsuperscript{2}Adapter: A Routing and Rewriting Adapter for Efficient Hybrid RAG},
+  author       = {Guo, Yucan and
+                  Su, Miao and
+                  Guan, Saiping and
+                  Bai, Long and
+                  Hou, Zhongni and
+                  Li, Zixuan and
+                  Jin, Xiaolong and
+                  Guo, Jiafeng and
+                  Cheng, Xueqi },
+  abstract     = {Retrieval-Augmented Generation (RAG) has become a prevailing paradigm for enhancing Large Language Models (LLMs) with non-parametric knowledge. Vanilla RAG efficiently handles simple queries but struggles with relational or multi-hop reasoning. Graph-based RAG alleviates this issue but incurs higher inference complexity and latency. In practice, user queries can differ significantly in their complexity, rendering a fixed RAG strategy suboptimal. However, existing hybrid text-graph RAG methods typically rely on heuristic and LLM-based routing, resulting in unnecessary overhead and strong dependence on the underlying LLM. To address these challenges, we propose R\textsuperscript{2}Adapter, a lightweight plug-in Routing and Rewriting Adapter designed to allocate queries between vanilla and graph-based RAG dynamically. By routing only the queries that genuinely benefit from graph-based reasoning, R\textsuperscript{2}Adapter reduces unnecessary graph retrieval overhead. Additionally, uncertain graph-routed queries are rewritten to better expose their multi-hop reasoning requirements, improving retrieval quality without additional supervision. Extensive experiments on three multi-hop QA benchmarks demonstrate that R\textsuperscript{2}Adapter reduces graph-based RAG usage by up to 59\% while maintaining comparable answer accuracy. This adapter is model-agnostic and can be seamlessly integrated into diverse vanilla and graph-based RAG pipelines, providing an efficient and adaptive solution for hybrid RAG systems.},
+  howpublished = {arXiv preprint},
+  month        = jul,
+  year         = {2026}
+}
+
 @misc{arxiv-2026-1,
   abbr         = {arXiv},
   html         = {https://arxiv.org/abs/2606.03705},
