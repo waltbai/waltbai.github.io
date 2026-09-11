@@ -1,5 +1,5 @@
-# Static SVG generation settings; display widths will be calibrated on integration.
-repo_card_widths: [300, 400]
+# Generate one width for every viewport to keep scheduled work small.
+repo_card_widths: [300]
 repo_description_lines_max: 3
 
 github_users:

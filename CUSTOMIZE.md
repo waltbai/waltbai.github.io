@@ -73,7 +73,8 @@ themes from `_config.yml`. The official
 [`stats-organization/github-readme-stats-action@v2`](https://github.com/stats-organization/github-readme-stats-action)
 generates the SVGs using the built-in `GITHUB_TOKEN`; no Vercel service or extra
 PAT is needed for these public repository cards. Each width is generated in both
-themes. The current five repositories produce 20 SVGs.
+themes. Only the 300px width is generated: the current five repositories produce
+10 SVGs, half the generation jobs of the previous two-width configuration.
 
 All cards must pass generation and validation before they are committed together
 to `assets/img/repository-cards/<owner>--<repo>--<width>--<mode>.svg`. A failure
@@ -91,10 +92,14 @@ The update workflow reports that deployment was requested, not that deployment
 succeeded; check **Deploy site** for the final result. Deployment runs on the same
 ref are serialized to avoid overlapping publishes.
 
-The page templates currently still use the existing remote card service. Before
-switching them to static SVGs, validate the first generated cards and calibrate
-their displayed widths so the browser does not rescale the fonts. The generation
-and deployment workflow is ready independently of that template migration.
+Both repository pages use 300px SVGs at their natural width on every viewport.
+This preserves the SVG font sizes; only screens too narrow for a 300px image
+scale it down to prevent overflow. Keep `repo_card_widths: [300]` when using this
+template. Light/dark variants follow the website theme.
+After adding a repository, run the card generation workflow before deploying its
+page entry, and pull the generated SVGs before previewing locally. The old remote
+service configuration is retained for a manual rollback, but these pages no
+longer request it.
 
 The user and repository information is defined in [\_data/repositories.yml](_data/repositories.yml). You can add as many users and repositories as you want. Both informations are used in the `repositories` section.
 
