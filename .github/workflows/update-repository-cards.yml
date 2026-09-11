@@ -1,0 +1,139 @@
+name: Update repository cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # 08:00 Asia/Shanghai (GitHub may delay scheduled runs)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: update-repository-cards
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.5"
+      - name: Read repository and theme configuration
+        id: matrix
+        shell: ruby {0}
+        run: |
+          require "yaml"
+          require "json"
+          require "date"
+
+          repositories = YAML.load_file("_data/repositories.yml")
+          config = YAML.load_file("_config.yml", permitted_classes: [Date, Time], aliases: true)
+          users = repositories.fetch("github_users", [])
+          widths = repositories.fetch("repo_card_widths")
+          unless widths.is_a?(Array) && !widths.empty? && widths.uniq == widths && widths.all? { |w| w.is_a?(Integer) && w >= 250 && w <= 1000 }
+            abort "repo_card_widths must contain unique integer widths between 250 and 1000"
+          end
+          lines = repositories.fetch("repo_description_lines_max")
+          abort "repo_description_lines_max must be between 1 and 3" unless (1..3).include?(lines)
+          cards = repositories.fetch("github_repos").flat_map do |repository|
+            unless repository.match?(%r{\A[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\z})
+              abort "Invalid repository: #{repository}"
+            end
+            owner, name = repository.split("/", 2)
+            widths.product(["light", "dark"]).map do |width, mode|
+              {
+                "id" => "#{owner}--#{name}--#{width}--#{mode}",
+                "options" => JSON.generate({
+                  "username" => owner,
+                  "repo" => name,
+                  "show_owner" => !users.include?(owner),
+                  "theme" => config.fetch("repo_theme_#{mode}"),
+                  "card_width" => width,
+                  "description_lines_count" => lines
+                })
+              }
+            end
+          end
+          abort "Card matrix must contain between 1 and 256 cards" unless (1..256).include?(cards.size)
+          abort "Duplicate card paths" unless cards.map { |card| card.fetch("id").downcase }.uniq.size == cards.size
+          File.open(ENV.fetch("GITHUB_OUTPUT"), "a") do |file|
+            file.puts "matrix=#{JSON.generate({"include" => cards})}"
+          end
+
+  generate:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - name: Generate SVG with the official action
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: ${{ matrix.options }}
+          path: generated-cards/${{ matrix.id }}.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+      - name: Validate generated card
+        env:
+          CARD_PATH: generated-cards/${{ matrix.id }}.svg
+          CARD_OPTIONS: ${{ matrix.options }}
+        run: python3 .github/scripts/validate_repository_card.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: repo-card-${{ matrix.id }}
+          path: generated-cards/*.svg
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    # This job runs only when every card has been generated and validated.
+    needs: [prepare, generate]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: repo-card-*
+          merge-multiple: true
+          path: assets/img/repository-cards
+      - name: Commit updated cards
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/img/repository-cards
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Repository cards are unchanged; no deployment needed." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git commit -m "Update repository cards"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Request website deployment
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          gh workflow run deploy.yml --ref "$DEFAULT_BRANCH"
+          echo "Cards committed; requested Deploy site. Check that workflow for the deployment result." >> "$GITHUB_STEP_SUMMARY"

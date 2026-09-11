@@ -61,6 +61,41 @@ What this means is, if there is no resume data defined in [\_config.yml](_config
 
 ## Modifying the user and repository information
 
+### Scheduled repository cards
+
+The `Update repository cards` workflow runs daily at 00:00 UTC (08:00 in
+Asia/Shanghai; scheduled runs can be delayed). Once the workflow is on the default
+branch, it can also be started from Actions using **Run workflow**.
+
+It reads `github_repos`, `github_users`, `repo_card_widths`, and
+`repo_description_lines_max` from `_data/repositories.yml`, and the light/dark
+themes from `_config.yml`. The official
+[`stats-organization/github-readme-stats-action@v2`](https://github.com/stats-organization/github-readme-stats-action)
+generates the SVGs using the built-in `GITHUB_TOKEN`; no Vercel service or extra
+PAT is needed for these public repository cards. Each width is generated in both
+themes. The current five repositories produce 20 SVGs.
+
+All cards must pass generation and validation before they are committed together
+to `assets/img/repository-cards/<owner>--<repo>--<width>--<mode>.svg`. A failure
+leaves existing committed cards intact. Unchanged cards cause no commit or deploy.
+Artifacts from successful generation jobs are retained for seven days.
+
+The publish job needs `contents: write` to push to the default branch and
+`actions: write` to explicitly dispatch `deploy.yml`, because pushes made with
+`GITHUB_TOKEN` do not trigger push workflows. Branch protection and repository
+Actions policies must allow these operations. If pushing fails, rerun the workflow
+after resolving the cause; if dispatch or deployment fails after a successful
+push, manually run **Deploy site** to publish the committed cards.
+
+The update workflow reports that deployment was requested, not that deployment
+succeeded; check **Deploy site** for the final result. Deployment runs on the same
+ref are serialized to avoid overlapping publishes.
+
+The page templates currently still use the existing remote card service. Before
+switching them to static SVGs, validate the first generated cards and calibrate
+their displayed widths so the browser does not rescale the fonts. The generation
+and deployment workflow is ready independently of that template migration.
+
 The user and repository information is defined in [\_data/repositories.yml](_data/repositories.yml). You can add as many users and repositories as you want. Both informations are used in the `repositories` section.
 
 ### Configuring external service URLs

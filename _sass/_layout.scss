@@ -75,6 +75,31 @@ body.sticky-bottom-footer {
   }
 }
 
+// Keep repository cards evenly spaced: one column on phones, two on tablets,
+// and three on desktop screens.
+.repository-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+
+  > .repo {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+
+    img {
+      height: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 // TODO: redefine content layout.
 
 /******************************************************************************

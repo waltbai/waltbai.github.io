@@ -7,6 +7,8 @@ Dockerfile
 .github/workflows/deploy.yml
 .github/workflows/sync_from_template.yml
 .github/workflows/update-citations.yml
+.github/workflows/update-repository-cards.yml
+.github/scripts/validate_repository_card.py
 
 # Template-provided GitHub agents target the demo en-us/pt-br/fr-ca structure.
 .github/agents/customize.agent.md
@@ -32,6 +34,7 @@ _talks/
 assets/json/
 assets/pdf/slides/
 assets/img/prof_pic.jpg
+assets/img/repository-cards/
 
 # Demo assets that are not used by this site.
 assets/img/[0-9].jpg

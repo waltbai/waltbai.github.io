@@ -1,3 +1,7 @@
+# Static SVG generation settings; display widths will be calibrated on integration.
+repo_card_widths: [300, 400]
+repo_description_lines_max: 3
+
 github_users:
   - waltbai
 
