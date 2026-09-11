@@ -3,13 +3,14 @@
 ## 仓库统计卡片服务迁移
 
 - [x] 新增每日静态 SVG 生成工作流；全部成功且内容变化后提交，并显式触发网站部署。
-- [ ] 推送并手动运行工作流，确认真实 GitHub API、提交权限与部署链路正常。
-- [ ] 校准静态卡片显示宽度和字号，验证明暗主题后将中英文页面切换到静态 SVG。
+- [x] 推送并手动运行工作流，确认真实 GitHub API、提交权限与部署链路正常。
+- [x] 本地中英文页面接入静态 SVG；统一使用 300px 原生尺寸，工作流仅生成 10 张明暗主题卡片。
+- [ ] 复查部署后的线上页面，确认中英文页面均使用 300px 静态卡片。
 
 - [ ] 将当前自托管的 `github-readme-stats` 迁移到
       [`stats-organization/github-stats-extended`](https://github.com/stats-organization/github-stats-extended)。
-- 当前服务地址配置在 `_config.yml` 的 `external_services.github_readme_stats_url`；相关调用位于
-  `_includes/repository/`。
+- 原服务地址保留在 `_config.yml` 的 `external_services.github_readme_stats_url`，便于手动回退；
+  本地 Repository 页面已不再请求该服务。
 - 迁移时确认仓库卡片接口、主题、语言、所有者显示和描述行数参数兼容，并验证中英文页面及
   明暗主题。新服务验证完成前保留当前自托管服务作为回退方案。
 
