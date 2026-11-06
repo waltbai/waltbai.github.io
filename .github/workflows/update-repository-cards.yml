@@ -23,7 +23,7 @@ jobs:
           ref: ${{ github.event.repository.default_branch }}
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3"
       - name: Read repository and theme configuration
         id: matrix
         shell: ruby {0}
